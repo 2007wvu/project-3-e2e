@@ -1,6 +1,7 @@
 package dev.cuny.steps;
 
 import org.junit.jupiter.api.Assertions;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -53,9 +54,8 @@ public class RegisterSteps {
 
 	@When("^Client clicks the register button$")
 	public void client_clicks_the_register_button() throws Throwable {
-		WebDriverWait wait = new WebDriverWait(driver, 5);
-	    wait.until(ExpectedConditions.elementToBeClickable(loginpage.registerButton));
-	    loginpage.registerButton.click();
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", loginpage.registerButton);
 	}
 
 	@Then("^Client should be on the login page$")

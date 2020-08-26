@@ -38,8 +38,8 @@ public class LoginSteps {
 	    loginpage.loginButton.click();
 	}
 
-	@Then("^Client is on the main page$")
-	public void client_is_on_the_main_page() throws Throwable {
+	@Then("^Client should be on the main page$")
+	public void client_should_be_on_the_main_page() throws Throwable {
 	    WebDriverWait wait = new WebDriverWait(driver, 5);
 	    wait.until(ExpectedConditions.visibilityOf(loginpage.mainBanner));
 	    Assertions.assertTrue(loginpage.mainBanner.isDisplayed());
@@ -52,5 +52,13 @@ public class LoginSteps {
 	    Assertions.assertTrue(loginpage.loginError.isDisplayed());
 	}
 
+	@When("^Client clicks the log out button$")
+	public void client_clicks_the_log_out_button() throws Throwable {
+	    loginpage.logoutButton.click();
+	}
 	
+	@Given("^Client is on the main page$")
+	public void client_is_on_the_main_page() throws Throwable {
+		driver.get("http://localhost:4200/main");
+	}
 }
