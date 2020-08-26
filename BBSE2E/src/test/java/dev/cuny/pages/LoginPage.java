@@ -55,4 +55,7 @@ public class LoginPage {
 	@FindBy(id = "regPassword")
 	public WebElement regPassword;
 	
+	@FindBy(linkText = "Logout")
+	public WebElement logoutButton;
+	
 }
