@@ -29,3 +29,11 @@ Feature: Log in to Bug Bounty System
 		|username|password|
 		|probablyNotAUsername|probablyNotAPassword|
 		|notAnAdminUsername|notAnAdminPassword|
+		
+	Scenario: Admin logs into their account
+		Given Admin is on the Login page
+		When Admin types "TheRaidman" into the username field
+		When Admin types "password" into the password field
+		When Admin clicks the Login button
+		Then Admin is on the main page
+		#Then Admin is logged in the system

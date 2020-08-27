@@ -11,7 +11,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import dev.cunny.pages.UserStatistics;
+import dev.cuny.pages.UserStatistics;
 
 public class UserStory6 {
 
