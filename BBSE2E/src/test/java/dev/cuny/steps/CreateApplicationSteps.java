@@ -3,6 +3,8 @@ package dev.cuny.steps;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -62,6 +64,27 @@ public class CreateApplicationSteps {
 		int lengthAfter = Integer.parseInt(createApplication.numberOfApplications.getAttribute("innerText"));
 		int lengthBefore = application_modal_is_displayed();
 		Assert.assertEquals(1, (lengthBefore - lengthAfter));
+	}
+	
+
+	@Then("^Missing field will display an error$")
+	public void missing_field_will_display_an_error() throws Throwable {
+		Assert.assertEquals(createApplication.urlError.getAttribute("innerText"),
+				"Application Github Link is required!");
+	}
+
+	@Then("^Application will not be submitted$")
+	public void application_will_not_be_submitted() throws Throwable {
+		int lengthAfter = Integer.parseInt(createApplication.numberOfApplications.getAttribute("innerText"));
+		int lengthBefore = application_modal_is_displayed();
+		Assert.assertEquals(0, (lengthBefore - lengthAfter));
+	}
+
+
+
+	@When("^Admin clicks the cancel button$")
+	public void admin_clicks_the_cancel_button() throws Throwable {
+		createApplication.cancel.click();
 	}
 
 }

@@ -14,7 +14,6 @@ import dev.cuny.runners.Runner;
 
 public class RegisterSteps {
 	
-	RegisterSteps(){}
 
 	public static LoginPage loginpage = Runner.loginpage;
 	public static WebDriver driver = Runner.driver;

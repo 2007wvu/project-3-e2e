@@ -34,8 +34,8 @@ WebDriver driver;
 		@FindBy(id="bugTableDiv")
 		public WebElement bugTableDiv;
 		
-		@FindBy(id="userNameProfile")
-		public WebElement userNameProfile;
+		@FindBy(id="profileDetail")
+		public WebElement profileDetail;
 		
 		
 		

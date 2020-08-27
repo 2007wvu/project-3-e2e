@@ -13,16 +13,18 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import dev.cuny.pages.CreateApplication;
 import dev.cuny.pages.LoginPage;
+import dev.cuny.pages.UserStatistics;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources", glue="dev.cuny.steps",    monochrome = true, 
-tags = {"@Tag1"},
+@CucumberOptions(features = "src/test/resources", glue="dev.cuny.steps",
+//tags = {"@UserStory6.1, @UserStory6.2, @UserStory6.3"},
 plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json"} )
 public class Runner {
 	
 	public static WebDriver driver;
 	public static LoginPage loginpage;
 	public static CreateApplication createApplication;
+	public static UserStatistics userStatistics;
 
 	@BeforeClass
 	public static void setUp() {
@@ -33,6 +35,7 @@ public class Runner {
 		driver.manage().window().maximize();
 		loginpage = new LoginPage(driver);
 		createApplication = new CreateApplication(driver);
+		userStatistics = new UserStatistics(driver);
 	}
 	
 	@AfterClass
