@@ -15,5 +15,5 @@ Feature: Client registers for the Bugs Bounty System
 		
 		Examples:
 		|firstName|lastName|username|email|password|
-		|Arthur12|Morgan2|AMorgan12|AMorgan2@gmail.com|a2Morgan|
+		|ArthurF|MorganF|AMorganF|AMorganF@gmail.com|a2Morgan|
 		
