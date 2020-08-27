@@ -1,4 +1,4 @@
-package dev.cunny.pages;
+package dev.cuny.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class CreateApplication {
-	
 WebDriver driver;
 	
 	public CreateApplication(WebDriver driver) {
@@ -28,10 +27,10 @@ WebDriver driver;
 		@FindBy(id="appointUrl")
 		public WebElement appointUrl;
 		
-		@FindBy(id="save")
+		@FindBy(xpath="//*[@id=\"saveApp\"]")
 		public WebElement saveBtn;
 		
-		@FindBy(tagName="ng-reflect-length")
+		@FindBy(id="datalength")
 		public WebElement numberOfApplications;
 		
 		

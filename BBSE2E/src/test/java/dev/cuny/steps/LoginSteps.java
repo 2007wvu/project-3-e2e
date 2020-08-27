@@ -1,17 +1,17 @@
 package dev.cuny.steps;
 
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.junit.jupiter.api.Assertions;
 import dev.cuny.pages.LoginPage;
 import dev.cuny.runners.Runner;
 
 public class LoginSteps {
+	
 
 	public static LoginPage loginpage = Runner.loginpage;
 	public static WebDriver driver = Runner.driver;
@@ -35,6 +35,7 @@ public class LoginSteps {
 
 	@When("^Client clicks the Login button$")
 	public void client_clicks_the_Login_button() throws Throwable {
+	   
 	    loginpage.loginButton.click();
 	}
 
@@ -51,6 +52,38 @@ public class LoginSteps {
 	    wait.until(ExpectedConditions.visibilityOf(loginpage.loginError));
 	    Assertions.assertTrue(loginpage.loginError.isDisplayed());
 	}
+	
+
+	@Given("^Admin is on the Login page$")
+	public void admin_is_on_the_Login_page() throws Throwable {
+		driver.get("http://localhost:4200");
+	}
+
+	@When("^Admin types \"([^\"]*)\" into the username field$")
+	public void admin_types_into_the_username_field(String arg1) throws Throwable {
+		loginpage.username.clear();
+	    loginpage.username.sendKeys(arg1);
+	}
+
+	@When("^Admin types \"([^\"]*)\" into the password field$")
+	public void admin_types_into_the_password_field(String arg1) throws Throwable {
+		loginpage.password.clear();
+	    loginpage.password.sendKeys(arg1);
+	}
+
+	@When("^Admin clicks the Login button$")
+	public void admin_clicks_the_Login_button() throws Throwable {
+	
+		loginpage.loginButton.click();
+	}
+
+	@Then("^Admin is on the main page$")
+	public void admin_is_on_the_main_page() throws Throwable {
+	    WebDriverWait wait = new WebDriverWait(driver, 5);
+	    wait.until(ExpectedConditions.visibilityOf(loginpage.mainBanner));
+	    Assertions.assertTrue(loginpage.mainBanner.isDisplayed());
+	}
+	
 
 	
 }

@@ -1,0 +1,205 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Admin logs into their account",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1566065500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Admin is on the Login page",
+            "match": {
+              "location": "LoginSteps.admin_is_on_the_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 162115400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Admin types \"TheRaidman\" into the username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TheRaidman",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginSteps.admin_types_into_the_username_field(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 148942200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Admin types \"password\" into the password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginSteps.admin_types_into_the_password_field(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 75408200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Admin clicks the Login button",
+            "match": {
+              "location": "LoginSteps.admin_clicks_the_Login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1622707100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Admin is on the main page",
+            "match": {
+              "location": "LoginSteps.admin_is_on_the_main_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Admin creates a new application",
+        "description": "",
+        "id": "as-admin-i-want-to-create-an-application;admin-creates-a-new-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 48594600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Admin is on the main page",
+            "match": {
+              "location": "LoginSteps.admin_is_on_the_main_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 130421500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Admin clicks on the applications tab",
+            "match": {
+              "location": "CreateApplicationSteps.admin_clicks_on_the_applications_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5088437900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Application modal is displayed",
+            "match": {
+              "location": "CreateApplicationSteps.application_modal_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 117766800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Admin adds \"NewCucTest101\" in the Application Title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NewCucTest101",
+                  "offset": 12
+                }
+              ],
+              "location": "CreateApplicationSteps.admin_adds_in_the_Application_Title(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 120319800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Admin adds \"NewGitCucLink101\" Github Link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NewGitCucLink101",
+                  "offset": 12
+                }
+              ],
+              "location": "CreateApplicationSteps.admin_adds_Github_Link(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 70266900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Admin clicks the save button",
+            "match": {
+              "location": "CreateApplicationSteps.admin_clicks_the_save_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5135514600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Application is added",
+            "match": {
+              "location": "CreateApplicationSteps.application_is_added()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@Tag1"
+          }
+        ]
+      }
+    ],
+    "name": "As admin I want to create an application",
+    "description": "",
+    "id": "as-admin-i-want-to-create-an-application",
+    "keyword": "Feature",
+    "uri": "CreateApplication.feature"
+  }
+]
