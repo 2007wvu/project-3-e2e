@@ -1,4 +1,4 @@
-package dev.cunny.pages;
+package dev.cuny.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class UserStatistics {
+
 	
 WebDriver driver;
 	
@@ -33,8 +34,8 @@ WebDriver driver;
 		@FindBy(id="bugTableDiv")
 		public WebElement bugTableDiv;
 		
-		@FindBy(id="userNameProfile")
-		public WebElement userNameProfile;
+		@FindBy(id="profileDetail")
+		public WebElement profileDetail;
 		
 		
 		

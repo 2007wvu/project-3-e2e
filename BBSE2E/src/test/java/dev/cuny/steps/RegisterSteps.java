@@ -1,5 +1,6 @@
 package dev.cuny.steps;
 
+
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -8,10 +9,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+
 import dev.cuny.pages.LoginPage;
 import dev.cuny.runners.Runner;
 
 public class RegisterSteps {
+	
 
 	public static LoginPage loginPage = Runner.loginPage;
 	public static WebDriver driver = Runner.driver;
@@ -73,8 +76,10 @@ public class RegisterSteps {
 
 	@When("^Client types \"([^\"]*)\" into the register password field$")
 	public void client_types_into_the_register_password_field(String arg1) throws Throwable {
+
 	    loginPage.regPassword.clear();
-	    loginPage.regPassword.clear();
+	    loginPage.regPassword.sendKeys(arg1);
+
 	}
 	
 }
