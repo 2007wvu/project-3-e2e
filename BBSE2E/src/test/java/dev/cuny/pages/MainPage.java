@@ -17,9 +17,6 @@ public class MainPage {
 	@FindBy(id = "mat-expansion-panel-header-0")
 	public WebElement firstApplication;
 	
-	@FindBy(linkText = "My email services is failing to send emails.")
-	public WebElement firstBug;
-	
 	@FindBy(linkText = "Profile")
 	public WebElement profileButton;
 	
@@ -29,5 +26,10 @@ public class MainPage {
 	@FindBy(id = "mainBanner")
 	public WebElement mainBanner;
 
+	@FindBy(id = "bugReportLink")
+	public WebElement bugReportLink;
+	
+	@FindBy(linkText = "View Bugs")
+	public WebElement viewBugsButton;
 	
 }

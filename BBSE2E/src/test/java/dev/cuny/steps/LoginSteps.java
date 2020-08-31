@@ -1,6 +1,6 @@
 package dev.cuny.steps;
 
-import org.junit.jupiter.api.Assertions;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -46,14 +46,14 @@ public class LoginSteps {
 	public void client_should_be_on_the_main_page() throws Throwable {
 	    WebDriverWait wait = new WebDriverWait(driver, 5);
 	    wait.until(ExpectedConditions.visibilityOf(mainPage.mainBanner));
-	    Assertions.assertTrue(mainPage.mainBanner.isDisplayed());
+	    Assert.assertTrue(mainPage.mainBanner.isDisplayed());
 	}
 
 	@Then("^Login Error Message is Displayed$")
 	public void login_Error_Message_is_Displayed() throws Throwable {
 	    WebDriverWait wait = new WebDriverWait(driver, 5);
 	    wait.until(ExpectedConditions.visibilityOf(loginPage.loginError));
-	    Assertions.assertTrue(loginPage.loginError.isDisplayed());
+	    Assert.assertTrue(loginPage.loginError.isDisplayed());
 	}
 	
 
@@ -84,7 +84,9 @@ public class LoginSteps {
 	public void admin_is_on_the_main_page() throws Throwable {
 	    WebDriverWait wait = new WebDriverWait(driver, 5);
 	    wait.until(ExpectedConditions.visibilityOf(mainPage.mainBanner));
-	    Assertions.assertTrue(mainPage.mainBanner.isDisplayed());
+
+	    Assert.assertTrue(mainPage.mainBanner.isDisplayed());
+
 	}
 	
 

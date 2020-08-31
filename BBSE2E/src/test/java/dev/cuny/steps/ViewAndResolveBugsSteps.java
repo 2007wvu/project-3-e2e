@@ -7,16 +7,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import dev.cuny.pages.BugReportPage;
 import dev.cuny.pages.MainPage;
+import dev.cuny.pages.ViewBugsPage;
 import dev.cuny.runners.Runner;
 
 public class ViewAndResolveBugsSteps {
 
 	public static MainPage mainPage = Runner.mainPage;
 	public static BugReportPage bugReportPage = Runner.bugReportPage;
+	public static ViewBugsPage viewBugsPage = Runner.viewBugsPage;
 	public static WebDriver driver = Runner.driver;
 	
 	@When("^Client clicks on an application$")
@@ -27,7 +30,7 @@ public class ViewAndResolveBugsSteps {
 
 	@Then("^The application's bugs are shown$")
 	public void the_application_s_bugs_are_shown() throws Throwable {
-		Assert.assertNotEquals(mainPage.firstBug.getCssValue("visibility"), "hidden");
+		Assert.assertTrue(mainPage.bugReportLink.isDisplayed());
 	}
 
 	@When("^Client clicks on the application$")
@@ -39,7 +42,7 @@ public class ViewAndResolveBugsSteps {
 	public void the_application_s_bugs_are_not_shown() throws Throwable {
 		Thread.sleep(1000);
 		try {
-		Assert.assertEquals(mainPage.firstBug.getCssValue("visibility"), "hidden");
+			Assert.assertFalse(mainPage.bugReportLink.isDisplayed());
 		} catch(NoSuchElementException e) {
 			Assert.assertTrue(e.getMessage().contains("no such element"));
 		}
@@ -47,11 +50,13 @@ public class ViewAndResolveBugsSteps {
 	
 	@When("^Client clicks on a bug link$")
 	public void client_clicks_on_a_bug_link() throws Throwable {
-	    mainPage.firstBug.click();
+		Thread.sleep(1000);
+	    mainPage.bugReportLink.click();
 	}
 
 	@Then("^The Bug's page is shown$")
 	public void the_Bug_s_page_is_shown() throws Throwable {
+		Thread.sleep(3000);
 	    Assert.assertTrue(bugReportPage.bugReportTitle.isDisplayed());
 	}
 
@@ -91,4 +96,37 @@ public class ViewAndResolveBugsSteps {
 	public void the_solution_input_is_cleared() throws Throwable {
 		Assert.assertEquals(bugReportPage.solutionDescription.getText()," ");
 	}
+	
+	@When("^Client clicks on view bugs button$")
+	public void client_clicks_on_view_bugs_button() throws Throwable {
+	    mainPage.viewBugsButton.click();
+	}
+
+	@Then("^Client should be on view bugs page$")
+	public void client_should_be_on_view_bugs_page() throws Throwable {
+	    Assert.assertTrue(viewBugsPage.toggleButton.isDisplayed());
+	}
+
+	@When("^Client clicks on unresolved bugs button$")
+	public void client_clicks_on_unresolved_bugs_button() throws Throwable {
+	    viewBugsPage.unresolvedBugsButton.click();
+	}
+
+	@Then("^Client clicks inspect button$")
+	public void client_clicks_inspect_button() throws Throwable {
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", viewBugsPage.inspectButton);
+	}
+	
+	@When("^Client clicks the mark as resolved button$")
+	public void client_clicks_the_mark_as_resolved_button() throws Throwable {
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", bugReportPage.resolveBugButton);
+	}
+
+	@Then("^status should be set to resolved$")
+	public void status_should_be_set_to_resolved() throws Throwable {
+	    Assert.assertEquals(bugReportPage.bugStatus.getText(), "Resolved");
+	}
+	
 }
