@@ -13,19 +13,23 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import dev.cuny.pages.CreateApplication;
 import dev.cuny.pages.LoginPage;
+import dev.cuny.pages.ReportBug;
+import dev.cuny.pages.SelectAppNewBug;
 import dev.cuny.pages.UserStatistics;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources", glue="dev.cuny.steps",
-//tags = {"@UserStory6.1, @UserStory6.2, @UserStory6.3"},
-plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json"} )
+@CucumberOptions(features = "src/test/resources", glue = "dev.cuny.steps", tags = {
+		"@UserStory3.1, @UserStory3.1.1" }, plugin = { "pretty", "html:target/cucumber", "json:target/cucumber.json" })
 public class Runner {
-	
+
 	public static WebDriver driver;
 	public static LoginPage loginpage;
 	public static CreateApplication createApplication;
 	public static UserStatistics userStatistics;
+	public static ReportBug reportBug;
+	//public static SelectClass selectClass;
 
+	
 	@BeforeClass
 	public static void setUp() {
 		File file = new File("src/main/resources/chromedriver.exe");
@@ -36,8 +40,10 @@ public class Runner {
 		loginpage = new LoginPage(driver);
 		createApplication = new CreateApplication(driver);
 		userStatistics = new UserStatistics(driver);
+		reportBug = new ReportBug(driver);
+		//selectClass = new SelectClass(driver);
 	}
-	
+
 	@AfterClass
 	public static void tearDown() {
 		driver.quit();
