@@ -14,7 +14,7 @@ public class BugReportPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(id = "bugReport31")
+	@FindBy(id = "bugReportTitle")
 	public WebElement bugReportTitle;
 	
 	@FindBy(id = "txtSolTitle")
@@ -28,4 +28,10 @@ public class BugReportPage {
 	
 	@FindBy(id = "submitButton")
 	public WebElement submitButton;
+	
+	@FindBy(id = "resolve-bug-button")
+	public WebElement resolveBugButton;
+	
+	@FindBy(id = "txtstatus")
+	public WebElement bugStatus;
 }

@@ -18,6 +18,7 @@ import dev.cuny.pages.ProfilePage;
 import dev.cuny.pages.CreateApplication;
 import dev.cuny.pages.LoginPage;
 import dev.cuny.pages.UserStatistics;
+import dev.cuny.pages.ViewBugsPage;
 
 
 @RunWith(Cucumber.class)
@@ -34,6 +35,7 @@ public class Runner {
 	public static ProfilePage profilePage;
 	public static CreateApplication createApplication;
 	public static UserStatistics userStatistics;
+	public static ViewBugsPage viewBugsPage;
 
 
 	@BeforeClass
@@ -47,6 +49,8 @@ public class Runner {
 		mainPage = new MainPage(driver);
 		bugReportPage = new BugReportPage(driver);
 		profilePage = new ProfilePage(driver);
+		viewBugsPage = new ViewBugsPage(driver);
+		
 		driver.manage().window().maximize();
 	
 		createApplication = new CreateApplication(driver);

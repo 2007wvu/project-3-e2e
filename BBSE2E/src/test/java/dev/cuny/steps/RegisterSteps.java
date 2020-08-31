@@ -1,7 +1,7 @@
 package dev.cuny.steps;
 
 
-import org.junit.jupiter.api.Assertions;
+import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -28,7 +28,7 @@ public class RegisterSteps {
 	public void client_is_on_the_Registration_page() throws Throwable {
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 	    wait.until(ExpectedConditions.visibilityOf(loginPage.firstName));
-	    Assertions.assertTrue(loginPage.firstName.isDisplayed());
+	    Assert.assertTrue(loginPage.firstName.isDisplayed());
 	}
 
 	@When("^Client types \"([^\"]*)\" into first name field$")
@@ -65,7 +65,7 @@ public class RegisterSteps {
 	public void client_should_be_on_the_login_page() throws Throwable {
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 	    wait.until(ExpectedConditions.visibilityOf(loginPage.loginButton));
-	    Assertions.assertTrue(loginPage.loginButton.isDisplayed());
+	    Assert.assertTrue(loginPage.loginButton.isDisplayed());
 	}
 	
 	@When("^Client types \"([^\"]*)\" into the register username field$")
@@ -76,10 +76,8 @@ public class RegisterSteps {
 
 	@When("^Client types \"([^\"]*)\" into the register password field$")
 	public void client_types_into_the_register_password_field(String arg1) throws Throwable {
-
 	    loginPage.regPassword.clear();
 	    loginPage.regPassword.sendKeys(arg1);
-
 	}
 	
 }
