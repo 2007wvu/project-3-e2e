@@ -14,6 +14,7 @@ import cucumber.api.junit.Cucumber;
 import dev.cuny.pages.BugReportPage;
 import dev.cuny.pages.LoginPage;
 import dev.cuny.pages.MainPage;
+import dev.cuny.pages.MetricsPage;
 import dev.cuny.pages.ProfilePage;
 import dev.cuny.pages.CreateApplication;
 import dev.cuny.pages.LoginPage;
@@ -36,6 +37,7 @@ public class Runner {
 	public static CreateApplication createApplication;
 	public static UserStatistics userStatistics;
 	public static ViewBugsPage viewBugsPage;
+	public static MetricsPage metricPage;
 
 
 	@BeforeClass
@@ -55,7 +57,7 @@ public class Runner {
 	
 		createApplication = new CreateApplication(driver);
 		userStatistics = new UserStatistics(driver);
-
+		metricPage = new MetricsPage(driver);
 	}
 	
 	@AfterClass
