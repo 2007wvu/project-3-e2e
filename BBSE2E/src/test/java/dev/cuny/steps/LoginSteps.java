@@ -64,27 +64,27 @@ public class LoginSteps {
 
 	@When("^Admin types \"([^\"]*)\" into the username field$")
 	public void admin_types_into_the_username_field(String arg1) throws Throwable {
-		loginpage.username.clear();
-	    loginpage.username.sendKeys(arg1);
+		loginPage.username.clear();
+	    loginPage.username.sendKeys(arg1);
 	}
 
 	@When("^Admin types \"([^\"]*)\" into the password field$")
 	public void admin_types_into_the_password_field(String arg1) throws Throwable {
-		loginpage.password.clear();
-	    loginpage.password.sendKeys(arg1);
+		loginPage.password.clear();
+	    loginPage.password.sendKeys(arg1);
 	}
 
 	@When("^Admin clicks the Login button$")
 	public void admin_clicks_the_Login_button() throws Throwable {
 	
-		loginpage.loginButton.click();
+		loginPage.loginButton.click();
 	}
 
 	@Then("^Admin is on the main page$")
 	public void admin_is_on_the_main_page() throws Throwable {
 	    WebDriverWait wait = new WebDriverWait(driver, 5);
-	    wait.until(ExpectedConditions.visibilityOf(loginpage.mainBanner));
-	    Assertions.assertTrue(loginpage.mainBanner.isDisplayed());
+	    wait.until(ExpectedConditions.visibilityOf(mainPage.mainBanner));
+	    Assertions.assertTrue(mainPage.mainBanner.isDisplayed());
 	}
 	
 
