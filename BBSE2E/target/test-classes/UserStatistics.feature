@@ -1,4 +1,4 @@
-Feature: As a Clien, I want to see various statistics, so that I can view leaderboard status & my solutions
+Feature: As a Client, I want to see various statistics, so that I can view leaderboard status & my solutions
 	
 	Background: Client logs into their account
 		Given Client is on the Login page

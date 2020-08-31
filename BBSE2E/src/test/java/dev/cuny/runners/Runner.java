@@ -18,16 +18,17 @@ import dev.cuny.pages.MetricsPage;
 import dev.cuny.pages.ProfilePage;
 import dev.cuny.pages.CreateApplication;
 import dev.cuny.pages.LoginPage;
+import dev.cuny.pages.ReportBug;
+import dev.cuny.pages.SelectAppNewBug;
 import dev.cuny.pages.UserStatistics;
 import dev.cuny.pages.ViewBugsPage;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources", glue="dev.cuny.steps",
-//tags = {"@UserStory6.1, @UserStory6.2, @UserStory6.3"},
-plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json"} )
+@CucumberOptions(features = "src/test/resources", glue = "dev.cuny.steps", tags = {
+		"@UserStory3.1, @UserStory3.1.1" }, plugin = { "pretty", "html:target/cucumber", "json:target/cucumber.json" })
 public class Runner {
-	
+
 	public static WebDriver driver;
 
 	public static LoginPage loginPage;
@@ -36,30 +37,32 @@ public class Runner {
 	public static ProfilePage profilePage;
 	public static CreateApplication createApplication;
 	public static UserStatistics userStatistics;
+	public static ReportBug reportBug;
 	public static ViewBugsPage viewBugsPage;
 	public static MetricsPage metricPage;
 
 
+	
 	@BeforeClass
 	public static void setUp() {
 		File file = new File("src/main/resources/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-
+    driver.manage().window().maximize();
+  
 		loginPage = new LoginPage(driver);
 		mainPage = new MainPage(driver);
 		bugReportPage = new BugReportPage(driver);
 		profilePage = new ProfilePage(driver);
 		viewBugsPage = new ViewBugsPage(driver);
-		
-		driver.manage().window().maximize();
-	
 		createApplication = new CreateApplication(driver);
 		userStatistics = new UserStatistics(driver);
+		reportBug = new ReportBug(driver);
 		metricPage = new MetricsPage(driver);
+
 	}
-	
+
 	@AfterClass
 	public static void tearDown() {
 		driver.quit();
