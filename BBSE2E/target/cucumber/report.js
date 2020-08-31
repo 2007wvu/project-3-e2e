@@ -42,7 +42,7 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 2297397900,
+  "duration": 2394963300,
   "status": "passed"
 });
 formatter.match({
@@ -55,7 +55,7 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_username_field(String)"
 });
 formatter.result({
-  "duration": 177104700,
+  "duration": 247224900,
   "status": "passed"
 });
 formatter.match({
@@ -68,21 +68,21 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 143934400,
+  "duration": 283490400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_clicks_the_Login_button()"
 });
 formatter.result({
-  "duration": 90655500,
+  "duration": 159027700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_should_be_on_the_main_page()"
 });
 formatter.result({
-  "duration": 1790519600,
+  "duration": 2765548200,
   "status": "passed"
 });
 formatter.scenario({
@@ -137,7 +137,7 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 570658900,
+  "duration": 847726800,
   "status": "passed"
 });
 formatter.match({
@@ -150,7 +150,7 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_username_field(String)"
 });
 formatter.result({
-  "duration": 214367000,
+  "duration": 288687100,
   "status": "passed"
 });
 formatter.match({
@@ -163,21 +163,21 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 171601700,
+  "duration": 235901300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_clicks_the_Login_button()"
 });
 formatter.result({
-  "duration": 62757700,
+  "duration": 102536400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_should_be_on_the_main_page()"
 });
 formatter.result({
-  "duration": 1785262000,
+  "duration": 2073755000,
   "status": "passed"
 });
 formatter.scenario({
@@ -232,56 +232,56 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_main_page()"
 });
 formatter.result({
-  "duration": 563984500,
+  "duration": 739146400,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.client_clicks_on_view_bugs_button()"
 });
 formatter.result({
-  "duration": 132494200,
+  "duration": 750070600,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.client_should_be_on_view_bugs_page()"
 });
 formatter.result({
-  "duration": 33736200,
+  "duration": 97184500,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.client_clicks_on_unresolved_bugs_button()"
 });
 formatter.result({
-  "duration": 84482800,
+  "duration": 132126100,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.client_clicks_inspect_button()"
 });
 formatter.result({
-  "duration": 702343700,
+  "duration": 338880700,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.the_Bug_s_page_is_shown()"
 });
 formatter.result({
-  "duration": 3029104300,
+  "duration": 3049503000,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.client_clicks_the_mark_as_resolved_button()"
 });
 formatter.result({
-  "duration": 22249700,
+  "duration": 33144100,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.status_should_be_set_to_resolved()"
 });
 formatter.result({
-  "duration": 24563100,
+  "duration": 46527800,
   "status": "passed"
 });
 formatter.uri("ClientViewResolvedBugs.feature");
@@ -324,28 +324,28 @@ formatter.match({
   "location": "ClientViewResolvedBugsSteps.the_user_is_on_the_home_page()"
 });
 formatter.result({
-  "duration": 576598900,
+  "duration": 737366300,
   "status": "passed"
 });
 formatter.match({
   "location": "ClientViewResolvedBugsSteps.the_user_signs_in_as_a_client()"
 });
 formatter.result({
-  "duration": 231427100,
+  "duration": 454081800,
   "status": "passed"
 });
 formatter.match({
   "location": "ClientViewResolvedBugsSteps.the_client_clicks_view_bugs()"
 });
 formatter.result({
-  "duration": 81923300,
+  "duration": 521925100,
   "status": "passed"
 });
 formatter.match({
   "location": "ClientViewResolvedBugsSteps.the_client_is_on_the_bug_page_viewing_resolved_bugs()"
 });
 formatter.result({
-  "duration": 2001758200,
+  "duration": 2000622300,
   "status": "passed"
 });
 formatter.uri("CreateApplication.feature");
@@ -392,7 +392,7 @@ formatter.match({
   "location": "LoginSteps.admin_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 408008700,
+  "duration": 795833700,
   "status": "passed"
 });
 formatter.match({
@@ -405,7 +405,7 @@ formatter.match({
   "location": "LoginSteps.admin_types_into_the_username_field(String)"
 });
 formatter.result({
-  "duration": 146909800,
+  "duration": 290971200,
   "status": "passed"
 });
 formatter.match({
@@ -418,21 +418,21 @@ formatter.match({
   "location": "LoginSteps.admin_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 118847500,
+  "duration": 259231700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.admin_clicks_the_Login_button()"
 });
 formatter.result({
-  "duration": 55823200,
+  "duration": 111466100,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.admin_is_on_the_main_page()"
 });
 formatter.result({
-  "duration": 1645848000,
+  "duration": 1891643400,
   "status": "passed"
 });
 formatter.scenario({
@@ -488,21 +488,21 @@ formatter.match({
   "location": "LoginSteps.admin_is_on_the_main_page()"
 });
 formatter.result({
-  "duration": 57317700,
+  "duration": 93726000,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateApplicationSteps.admin_clicks_on_the_applications_tab()"
 });
 formatter.result({
-  "duration": 155993500,
+  "duration": 296805600,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateApplicationSteps.application_modal_is_displayed()"
 });
 formatter.result({
-  "duration": 5126637900,
+  "duration": 5158913100,
   "status": "passed"
 });
 formatter.match({
@@ -515,7 +515,7 @@ formatter.match({
   "location": "CreateApplicationSteps.admin_adds_in_the_Application_Title(String)"
 });
 formatter.result({
-  "duration": 89881000,
+  "duration": 178050100,
   "status": "passed"
 });
 formatter.match({
@@ -528,22 +528,22 @@ formatter.match({
   "location": "CreateApplicationSteps.admin_adds_Github_Link(String)"
 });
 formatter.result({
-  "duration": 92431400,
+  "duration": 183807900,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateApplicationSteps.admin_clicks_the_save_button()"
 });
 formatter.result({
-  "duration": 51917900,
+  "duration": 109259300,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateApplicationSteps.application_is_added()"
 });
 formatter.result({
-  "duration": 9106930800,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#datalength\"}\n  (Session info: chrome\u003d84.0.4147.135)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-MPV0AVOS\u0027, ip: \u002710.8.1.16\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\\Users\\noahq\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50624}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: ad7928e8b09ae35537053d18c01c1ee7\n*** Element info: {Using\u003did, value\u003ddatalength}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.getAttribute(Unknown Source)\r\n\tat dev.cuny.steps.CreateApplicationSteps.application_modal_is_displayed(CreateApplicationSteps.java:41)\r\n\tat dev.cuny.steps.CreateApplicationSteps.application_is_added(CreateApplicationSteps.java:65)\r\n\tat ✽.Then Application is added(CreateApplication.feature:18)\r\n",
+  "duration": 404126600,
+  "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d84.0.4147.135)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-765TLT6M\u0027, ip: \u0027192.168.1.162\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\\Users\\davew\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60033}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 69d194e6f08ad2f9382481ed7a52b49d\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat dev.cuny.steps.CreateApplicationSteps.application_modal_is_displayed(CreateApplicationSteps.java:39)\r\n\tat dev.cuny.steps.CreateApplicationSteps.application_is_added(CreateApplicationSteps.java:65)\r\n\tat ✽.Then Application is added(CreateApplication.feature:18)\r\n",
   "status": "failed"
 });
 formatter.background({
@@ -582,7 +582,7 @@ formatter.match({
   "location": "LoginSteps.admin_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 744962400,
+  "duration": 1258254000,
   "status": "passed"
 });
 formatter.match({
@@ -595,7 +595,7 @@ formatter.match({
   "location": "LoginSteps.admin_types_into_the_username_field(String)"
 });
 formatter.result({
-  "duration": 114660100,
+  "duration": 268747200,
   "status": "passed"
 });
 formatter.match({
@@ -608,21 +608,21 @@ formatter.match({
   "location": "LoginSteps.admin_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 127654900,
+  "duration": 249683300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.admin_clicks_the_Login_button()"
 });
 formatter.result({
-  "duration": 64912300,
+  "duration": 112567700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.admin_is_on_the_main_page()"
 });
 formatter.result({
-  "duration": 1470585900,
+  "duration": 2014053000,
   "status": "passed"
 });
 formatter.scenario({
@@ -678,21 +678,21 @@ formatter.match({
   "location": "LoginSteps.admin_is_on_the_main_page()"
 });
 formatter.result({
-  "duration": 51701500,
+  "duration": 85841700,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateApplicationSteps.admin_clicks_on_the_applications_tab()"
 });
 formatter.result({
-  "duration": 96281600,
+  "duration": 278168100,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateApplicationSteps.application_modal_is_displayed()"
 });
 formatter.result({
-  "duration": 5083166600,
+  "duration": 5157008700,
   "status": "passed"
 });
 formatter.match({
@@ -705,28 +705,28 @@ formatter.match({
   "location": "CreateApplicationSteps.admin_adds_in_the_Application_Title(String)"
 });
 formatter.result({
-  "duration": 119221300,
+  "duration": 166676300,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateApplicationSteps.admin_clicks_the_save_button()"
 });
 formatter.result({
-  "duration": 48625600,
+  "duration": 109402700,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateApplicationSteps.missing_field_will_display_an_error()"
 });
 formatter.result({
-  "duration": 21129400,
+  "duration": 47168400,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateApplicationSteps.application_will_not_be_submitted()"
 });
 formatter.result({
-  "duration": 5097581400,
+  "duration": 5152337500,
   "status": "passed"
 });
 formatter.background({
@@ -765,7 +765,7 @@ formatter.match({
   "location": "LoginSteps.admin_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 1561914100,
+  "duration": 1235504900,
   "status": "passed"
 });
 formatter.match({
@@ -778,7 +778,7 @@ formatter.match({
   "location": "LoginSteps.admin_types_into_the_username_field(String)"
 });
 formatter.result({
-  "duration": 195818500,
+  "duration": 283655300,
   "status": "passed"
 });
 formatter.match({
@@ -791,21 +791,21 @@ formatter.match({
   "location": "LoginSteps.admin_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 181631800,
+  "duration": 239360000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.admin_clicks_the_Login_button()"
 });
 formatter.result({
-  "duration": 91406700,
+  "duration": 115065700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.admin_is_on_the_main_page()"
 });
 formatter.result({
-  "duration": 1739846800,
+  "duration": 1997943500,
   "status": "passed"
 });
 formatter.scenario({
@@ -861,21 +861,21 @@ formatter.match({
   "location": "LoginSteps.admin_is_on_the_main_page()"
 });
 formatter.result({
-  "duration": 54076000,
+  "duration": 78391300,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateApplicationSteps.admin_clicks_on_the_applications_tab()"
 });
 formatter.result({
-  "duration": 149424500,
+  "duration": 274043200,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateApplicationSteps.application_modal_is_displayed()"
 });
 formatter.result({
-  "duration": 5097163300,
+  "duration": 5141780400,
   "status": "passed"
 });
 formatter.match({
@@ -888,7 +888,7 @@ formatter.match({
   "location": "CreateApplicationSteps.admin_adds_in_the_Application_Title(String)"
 });
 formatter.result({
-  "duration": 109529200,
+  "duration": 165961800,
   "status": "passed"
 });
 formatter.match({
@@ -901,60 +901,60 @@ formatter.match({
   "location": "CreateApplicationSteps.admin_adds_Github_Link(String)"
 });
 formatter.result({
-  "duration": 95264800,
+  "duration": 170855000,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateApplicationSteps.admin_clicks_the_cancel_button()"
 });
 formatter.result({
-  "duration": 51674900,
+  "duration": 96670600,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateApplicationSteps.application_will_not_be_submitted()"
 });
 formatter.result({
-  "duration": 5089647600,
+  "duration": 5172709000,
   "status": "passed"
 });
-formatter.uri("CreateApplicatoin.feature");
+formatter.uri("FilterAndSortBugs.feature");
 formatter.feature({
   "line": 1,
-  "name": "As admin I want to create an application",
+  "name": "Filter and sort bugs on View Bugs page",
   "description": "",
-  "id": "as-admin-i-want-to-create-an-application",
+  "id": "filter-and-sort-bugs-on-view-bugs-page",
   "keyword": "Feature"
 });
 formatter.background({
-  "line": 2,
-  "name": "Admin logs into their account",
+  "line": 3,
+  "name": "Client logs in",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.step({
-  "line": 3,
+  "line": 4,
   "name": "Client is on the Login page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 4,
+  "line": 5,
   "name": "Client types \"Emailman\" into the username field",
   "keyword": "When "
 });
 formatter.step({
-  "line": 5,
+  "line": 6,
   "name": "Client types \"password\" into the password field",
   "keyword": "When "
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "Client clicks the Login button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "Client should be on the main page",
   "keyword": "Then "
 });
@@ -962,7 +962,7 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 876507600,
+  "duration": 1004357100,
   "status": "passed"
 });
 formatter.match({
@@ -975,7 +975,7 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_username_field(String)"
 });
 formatter.result({
-  "duration": 136461900,
+  "duration": 264776400,
   "status": "passed"
 });
 formatter.match({
@@ -988,115 +988,138 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 149479800,
+  "duration": 239171100,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_clicks_the_Login_button()"
 });
 formatter.result({
-  "duration": 65200900,
+  "duration": 124283400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_should_be_on_the_main_page()"
 });
 formatter.result({
-  "duration": 1634678500,
+  "duration": 2091581000,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 8,
-  "name": "Admin creates a new application",
+  "line": 10,
+  "name": "Client views requested bug reports",
   "description": "",
-  "id": "as-admin-i-want-to-create-an-application;admin-creates-a-new-application",
+  "id": "filter-and-sort-bugs-on-view-bugs-page;client-views-requested-bug-reports",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 9,
-  "name": "Admin clicks on the applications tab",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "Application modal is displayed",
-  "keyword": "Then "
-});
-formatter.step({
   "line": 11,
-  "name": "Admin adds \"NewCucTest\" in the Application Title",
-  "keyword": "When "
+  "name": "Client is on the main page",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 12,
-  "name": "Admin adds \"NewGitCucLink\" Github Link",
+  "name": "Client clicks on view bugs button",
   "keyword": "When "
 });
 formatter.step({
   "line": 13,
-  "name": "Admin clicks the save button",
-  "keyword": "When "
+  "name": "Client should be on view bugs page",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 14,
-  "name": "Application is added",
+  "name": "Client clicks on the requested bugs tab",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 15,
+  "name": "Requested bugs table is displayed",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 16,
+  "name": "Client clicks inspect button on a bug",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 17,
+  "name": "Bug report view is displayed",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 18,
+  "name": "Client clicks on return to view bugs button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 19,
+  "name": "Resolved bugs table is displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "CreateApplicationSteps.admin_clicks_on_the_applications_tab()"
+  "location": "LoginSteps.client_is_on_the_main_page()"
 });
 formatter.result({
-  "duration": 121090000,
+  "duration": 723097100,
   "status": "passed"
 });
 formatter.match({
-  "location": "CreateApplicationSteps.application_modal_is_displayed()"
+  "location": "ViewAndResolveBugsSteps.client_clicks_on_view_bugs_button()"
 });
 formatter.result({
-  "duration": 5091179500,
+  "duration": 677697700,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "NewCucTest",
-      "offset": 12
-    }
-  ],
-  "location": "CreateApplicationSteps.admin_adds_in_the_Application_Title(String)"
+  "location": "ViewAndResolveBugsSteps.client_should_be_on_view_bugs_page()"
 });
 formatter.result({
-  "duration": 158682200,
+  "duration": 183282700,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "NewGitCucLink",
-      "offset": 12
-    }
-  ],
-  "location": "CreateApplicationSteps.admin_adds_Github_Link(String)"
+  "location": "FilterAndSortBugsSteps.client_clicks_on_the_requested_bugs_tab()"
 });
 formatter.result({
-  "duration": 130459000,
+  "duration": 130842900,
   "status": "passed"
 });
 formatter.match({
-  "location": "CreateApplicationSteps.admin_clicks_the_save_button()"
+  "location": "FilterAndSortBugsSteps.requested_bugs_table_is_displayed()"
 });
 formatter.result({
-  "duration": 67113700,
+  "duration": 160036500,
   "status": "passed"
 });
 formatter.match({
-  "location": "CreateApplicationSteps.application_is_added()"
+  "location": "FilterAndSortBugsSteps.client_clicks_inspect_button_on_a_bug()"
 });
 formatter.result({
-  "duration": 9139567200,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#datalength\"}\n  (Session info: chrome\u003d84.0.4147.135)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-MPV0AVOS\u0027, ip: \u002710.8.1.16\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\\Users\\noahq\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50624}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: ad7928e8b09ae35537053d18c01c1ee7\n*** Element info: {Using\u003did, value\u003ddatalength}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.getAttribute(Unknown Source)\r\n\tat dev.cuny.steps.CreateApplicationSteps.application_modal_is_displayed(CreateApplicationSteps.java:41)\r\n\tat dev.cuny.steps.CreateApplicationSteps.application_is_added(CreateApplicationSteps.java:65)\r\n\tat ✽.Then Application is added(CreateApplicatoin.feature:14)\r\n",
-  "status": "failed"
+  "duration": 848071200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "FilterAndSortBugsSteps.bug_report_view_is_displayed()"
+});
+formatter.result({
+  "duration": 97379600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "FilterAndSortBugsSteps.client_clicks_on_return_to_view_bugs_button()"
+});
+formatter.result({
+  "duration": 509017200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "FilterAndSortBugsSteps.resolved_bugs_table_is_displayed()"
+});
+formatter.result({
+  "duration": 129925800,
+  "status": "passed"
 });
 formatter.uri("HomePageApplicationList.feature");
 formatter.feature({
@@ -1142,7 +1165,7 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 1347997200,
+  "duration": 1350037600,
   "status": "passed"
 });
 formatter.match({
@@ -1155,7 +1178,7 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_username_field(String)"
 });
 formatter.result({
-  "duration": 172603800,
+  "duration": 240560500,
   "status": "passed"
 });
 formatter.match({
@@ -1168,21 +1191,21 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 138142600,
+  "duration": 275065000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_clicks_the_Login_button()"
 });
 formatter.result({
-  "duration": 51924100,
+  "duration": 116243300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_should_be_on_the_main_page()"
 });
 formatter.result({
-  "duration": 1571034300,
+  "duration": 2058606300,
   "status": "passed"
 });
 formatter.scenario({
@@ -1217,28 +1240,28 @@ formatter.match({
   "location": "ViewAndResolveBugsSteps.client_clicks_on_an_application()"
 });
 formatter.result({
-  "duration": 760816400,
+  "duration": 111970200,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.the_application_s_bugs_are_shown()"
 });
 formatter.result({
-  "duration": 45272200,
+  "duration": 106528500,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.client_clicks_on_the_application()"
 });
 formatter.result({
-  "duration": 82451200,
+  "duration": 90901700,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.the_application_s_bugs_are_not_shown()"
 });
 formatter.result({
-  "duration": 1067840900,
+  "duration": 1039871500,
   "status": "passed"
 });
 formatter.background({
@@ -1277,7 +1300,7 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 626569800,
+  "duration": 668014200,
   "status": "passed"
 });
 formatter.match({
@@ -1290,7 +1313,7 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_username_field(String)"
 });
 formatter.result({
-  "duration": 183316800,
+  "duration": 238837200,
   "status": "passed"
 });
 formatter.match({
@@ -1303,21 +1326,21 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 169334300,
+  "duration": 224855500,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_clicks_the_Login_button()"
 });
 formatter.result({
-  "duration": 61403900,
+  "duration": 125156000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_should_be_on_the_main_page()"
 });
 formatter.result({
-  "duration": 1584262800,
+  "duration": 2078116600,
   "status": "passed"
 });
 formatter.scenario({
@@ -1367,21 +1390,21 @@ formatter.match({
   "location": "ViewAndResolveBugsSteps.client_clicks_on_an_application()"
 });
 formatter.result({
-  "duration": 782503200,
+  "duration": 106977500,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.client_clicks_on_a_bug_link()"
 });
 formatter.result({
-  "duration": 1100375100,
+  "duration": 1211968800,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.the_Bug_s_page_is_shown()"
 });
 formatter.result({
-  "duration": 3031632500,
+  "duration": 3052301100,
   "status": "passed"
 });
 formatter.match({
@@ -1394,7 +1417,7 @@ formatter.match({
   "location": "ViewAndResolveBugsSteps.client_enters_into_the_title_input(String)"
 });
 formatter.result({
-  "duration": 120298000,
+  "duration": 201933400,
   "status": "passed"
 });
 formatter.match({
@@ -1407,21 +1430,21 @@ formatter.match({
   "location": "ViewAndResolveBugsSteps.client_enters_into_the_solution_input(String)"
 });
 formatter.result({
-  "duration": 118885300,
+  "duration": 211413200,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.client_clicks_the_submit_button()"
 });
 formatter.result({
-  "duration": 46899100,
+  "duration": 94063700,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.the_solution_is_added_under_Posted_Solution_s()"
 });
 formatter.result({
-  "duration": 436298000,
+  "duration": 767977600,
   "status": "passed"
 });
 formatter.background({
@@ -1460,7 +1483,7 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 821466600,
+  "duration": 1254977400,
   "status": "passed"
 });
 formatter.match({
@@ -1473,7 +1496,7 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_username_field(String)"
 });
 formatter.result({
-  "duration": 120409700,
+  "duration": 305793100,
   "status": "passed"
 });
 formatter.match({
@@ -1486,21 +1509,21 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 125699500,
+  "duration": 235872400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_clicks_the_Login_button()"
 });
 formatter.result({
-  "duration": 61701100,
+  "duration": 104494200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_should_be_on_the_main_page()"
 });
 formatter.result({
-  "duration": 1544543000,
+  "duration": 2179218500,
   "status": "passed"
 });
 formatter.scenario({
@@ -1555,21 +1578,21 @@ formatter.match({
   "location": "ViewAndResolveBugsSteps.client_clicks_on_an_application()"
 });
 formatter.result({
-  "duration": 689935600,
+  "duration": 116206800,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.client_clicks_on_a_bug_link()"
 });
 formatter.result({
-  "duration": 1092999100,
+  "duration": 1199232200,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.the_Bug_s_page_is_shown()"
 });
 formatter.result({
-  "duration": 3027457600,
+  "duration": 3038665500,
   "status": "passed"
 });
 formatter.match({
@@ -1582,7 +1605,7 @@ formatter.match({
   "location": "ViewAndResolveBugsSteps.client_enters_into_the_title_input(String)"
 });
 formatter.result({
-  "duration": 107932900,
+  "duration": 205649600,
   "status": "passed"
 });
 formatter.match({
@@ -1595,28 +1618,28 @@ formatter.match({
   "location": "ViewAndResolveBugsSteps.client_enters_into_the_solution_input(String)"
 });
 formatter.result({
-  "duration": 98686800,
+  "duration": 182481000,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.client_clicks_the_cancel_button()"
 });
 formatter.result({
-  "duration": 43284200,
+  "duration": 103845400,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.the_title_input_is_cleared()"
 });
 formatter.result({
-  "duration": 23654000,
+  "duration": 42298800,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewAndResolveBugsSteps.the_solution_input_is_cleared()"
 });
 formatter.result({
-  "duration": 29205500,
+  "duration": 34226000,
   "status": "passed"
 });
 formatter.uri("Login.feature");
@@ -1736,7 +1759,7 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 538385700,
+  "duration": 1308334600,
   "status": "passed"
 });
 formatter.match({
@@ -1749,7 +1772,7 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_username_field(String)"
 });
 formatter.result({
-  "duration": 118251000,
+  "duration": 258170600,
   "status": "passed"
 });
 formatter.match({
@@ -1762,21 +1785,21 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 156547200,
+  "duration": 253921600,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_clicks_the_Login_button()"
 });
 formatter.result({
-  "duration": 55640900,
+  "duration": 104791300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_should_be_on_the_main_page()"
 });
 formatter.result({
-  "duration": 1669038000,
+  "duration": 2382975500,
   "status": "passed"
 });
 formatter.scenario({
@@ -1822,7 +1845,7 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 635567300,
+  "duration": 659413200,
   "status": "passed"
 });
 formatter.match({
@@ -1835,7 +1858,7 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_username_field(String)"
 });
 formatter.result({
-  "duration": 151841100,
+  "duration": 185310900,
   "status": "passed"
 });
 formatter.match({
@@ -1848,21 +1871,21 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 265797600,
+  "duration": 240712200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_clicks_the_Login_button()"
 });
 formatter.result({
-  "duration": 61964800,
+  "duration": 95313300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_should_be_on_the_main_page()"
 });
 formatter.result({
-  "duration": 1410664400,
+  "duration": 2097356300,
   "status": "passed"
 });
 formatter.scenario({
@@ -1892,21 +1915,21 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_main_page()"
 });
 formatter.result({
-  "duration": 277476100,
+  "duration": 847241800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_clicks_the_log_out_button()"
 });
 formatter.result({
-  "duration": 175407700,
+  "duration": 322094400,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterSteps.client_should_be_on_the_login_page()"
 });
 formatter.result({
-  "duration": 46296800,
+  "duration": 85954700,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -2018,7 +2041,7 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 457035200,
+  "duration": 813886500,
   "status": "passed"
 });
 formatter.match({
@@ -2031,7 +2054,7 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_username_field(String)"
 });
 formatter.result({
-  "duration": 154057100,
+  "duration": 348785500,
   "status": "passed"
 });
 formatter.match({
@@ -2044,21 +2067,21 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 159383000,
+  "duration": 294922000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_clicks_the_Login_button()"
 });
 formatter.result({
-  "duration": 53369400,
+  "duration": 89883400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.login_Error_Message_is_Displayed()"
 });
 formatter.result({
-  "duration": 109426700,
+  "duration": 112283900,
   "status": "passed"
 });
 formatter.scenario({
@@ -2104,7 +2127,7 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 400996400,
+  "duration": 759284500,
   "status": "passed"
 });
 formatter.match({
@@ -2117,7 +2140,7 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_username_field(String)"
 });
 formatter.result({
-  "duration": 159095800,
+  "duration": 328438400,
   "status": "passed"
 });
 formatter.match({
@@ -2130,21 +2153,21 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 133413200,
+  "duration": 276418100,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_clicks_the_Login_button()"
 });
 formatter.result({
-  "duration": 46212700,
+  "duration": 107366700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.login_Error_Message_is_Displayed()"
 });
 formatter.result({
-  "duration": 101504000,
+  "duration": 100068000,
   "status": "passed"
 });
 formatter.scenario({
@@ -2184,7 +2207,7 @@ formatter.match({
   "location": "LoginSteps.admin_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 470708700,
+  "duration": 795981300,
   "status": "passed"
 });
 formatter.match({
@@ -2197,7 +2220,7 @@ formatter.match({
   "location": "LoginSteps.admin_types_into_the_username_field(String)"
 });
 formatter.result({
-  "duration": 112129300,
+  "duration": 244511700,
   "status": "passed"
 });
 formatter.match({
@@ -2210,21 +2233,21 @@ formatter.match({
   "location": "LoginSteps.admin_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 113647700,
+  "duration": 272451200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.admin_clicks_the_Login_button()"
 });
 formatter.result({
-  "duration": 47542000,
+  "duration": 107764700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.admin_is_on_the_main_page()"
 });
 formatter.result({
-  "duration": 1663330900,
+  "duration": 2009487500,
   "status": "passed"
 });
 formatter.uri("ProfilePage.feature");
@@ -2271,7 +2294,7 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 325836700,
+  "duration": 687537900,
   "status": "passed"
 });
 formatter.match({
@@ -2284,7 +2307,7 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_username_field(String)"
 });
 formatter.result({
-  "duration": 100730900,
+  "duration": 261398700,
   "status": "passed"
 });
 formatter.match({
@@ -2297,21 +2320,21 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 111038000,
+  "duration": 240003100,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_clicks_the_Login_button()"
 });
 formatter.result({
-  "duration": 47915900,
+  "duration": 106657600,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_should_be_on_the_main_page()"
 });
 formatter.result({
-  "duration": 1360156700,
+  "duration": 2353006600,
   "status": "passed"
 });
 formatter.scenario({
@@ -2346,28 +2369,28 @@ formatter.match({
   "location": "ProfileSteps.client_clicks_on_the_profile_button()"
 });
 formatter.result({
-  "duration": 93289100,
+  "duration": 302062400,
   "status": "passed"
 });
 formatter.match({
   "location": "ProfileSteps.client_should_be_on_the_profile_page()"
 });
 formatter.result({
-  "duration": 67705100,
+  "duration": 121723800,
   "status": "passed"
 });
 formatter.match({
   "location": "ProfileSteps.table_of_submitted_bugs_should_be_shown()"
 });
 formatter.result({
-  "duration": 24483000,
+  "duration": 49966700,
   "status": "passed"
 });
 formatter.match({
   "location": "ProfileSteps.table_of_submitted_solutions_should_be_shown()"
 });
 formatter.result({
-  "duration": 26562600,
+  "duration": 38850900,
   "status": "passed"
 });
 formatter.uri("Register.feature");
@@ -2557,21 +2580,21 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 329681100,
+  "duration": 861465000,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterSteps.client_clicks_the_register_tab()"
 });
 formatter.result({
-  "duration": 73615100,
+  "duration": 165856300,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterSteps.client_is_on_the_Registration_page()"
 });
 formatter.result({
-  "duration": 59159400,
+  "duration": 109640300,
   "status": "passed"
 });
 formatter.match({
@@ -2584,7 +2607,7 @@ formatter.match({
   "location": "RegisterSteps.client_types_into_first_name_field(String)"
 });
 formatter.result({
-  "duration": 134704600,
+  "duration": 293377600,
   "status": "passed"
 });
 formatter.match({
@@ -2597,7 +2620,7 @@ formatter.match({
   "location": "RegisterSteps.client_types_into_last_name_field(String)"
 });
 formatter.result({
-  "duration": 119010000,
+  "duration": 255472200,
   "status": "passed"
 });
 formatter.match({
@@ -2610,7 +2633,7 @@ formatter.match({
   "location": "RegisterSteps.client_types_into_the_register_username_field(String)"
 });
 formatter.result({
-  "duration": 119160300,
+  "duration": 237707200,
   "status": "passed"
 });
 formatter.match({
@@ -2623,7 +2646,7 @@ formatter.match({
   "location": "RegisterSteps.client_Types_into_the_email_field(String)"
 });
 formatter.result({
-  "duration": 151451000,
+  "duration": 305122600,
   "status": "passed"
 });
 formatter.match({
@@ -2636,7 +2659,7 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 99130000,
+  "duration": 182141200,
   "status": "passed"
 });
 formatter.match({
@@ -2649,21 +2672,21 @@ formatter.match({
   "location": "RegisterSteps.client_types_into_the_confirm_password_field(String)"
 });
 formatter.result({
-  "duration": 101717500,
+  "duration": 244979200,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterSteps.client_clicks_the_register_button()"
 });
 formatter.result({
-  "duration": 25844500,
+  "duration": 45678300,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterSteps.client_should_be_on_the_login_page()"
 });
 formatter.result({
-  "duration": 453898200,
+  "duration": 1012421200,
   "status": "passed"
 });
 formatter.uri("UserStatistics.feature");
@@ -2710,7 +2733,7 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 324523900,
+  "duration": 811070800,
   "status": "passed"
 });
 formatter.match({
@@ -2723,7 +2746,7 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_username_field(String)"
 });
 formatter.result({
-  "duration": 111516100,
+  "duration": 254239100,
   "status": "passed"
 });
 formatter.match({
@@ -2736,21 +2759,21 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 114173100,
+  "duration": 200594300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_clicks_the_Login_button()"
 });
 formatter.result({
-  "duration": 41327800,
+  "duration": 107027600,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_is_on_the_main_page()"
 });
 formatter.result({
-  "duration": 242519200,
+  "duration": 844695200,
   "status": "passed"
 });
 formatter.scenario({
@@ -2781,14 +2804,14 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_main_page()"
 });
 formatter.result({
-  "duration": 389129600,
+  "duration": 846766900,
   "status": "passed"
 });
 formatter.match({
   "location": "UserStatisticsSteps.leaderboard_is_displayed()"
 });
 formatter.result({
-  "duration": 41531100,
+  "duration": 97220900,
   "status": "passed"
 });
 formatter.background({
@@ -2827,7 +2850,7 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 427996800,
+  "duration": 1093989800,
   "status": "passed"
 });
 formatter.match({
@@ -2840,7 +2863,7 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_username_field(String)"
 });
 formatter.result({
-  "duration": 116166200,
+  "duration": 242252600,
   "status": "passed"
 });
 formatter.match({
@@ -2853,21 +2876,21 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 133895700,
+  "duration": 257949400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_clicks_the_Login_button()"
 });
 formatter.result({
-  "duration": 53459600,
+  "duration": 107481500,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_is_on_the_main_page()"
 });
 formatter.result({
-  "duration": 357704400,
+  "duration": 771049300,
   "status": "passed"
 });
 formatter.scenario({
@@ -2918,42 +2941,42 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_main_page()"
 });
 formatter.result({
-  "duration": 375439000,
+  "duration": 861629500,
   "status": "passed"
 });
 formatter.match({
   "location": "UserStatisticsSteps.client_clicks_the_profile_tab()"
 });
 formatter.result({
-  "duration": 124711100,
+  "duration": 393609200,
   "status": "passed"
 });
 formatter.match({
   "location": "UserStatisticsSteps.client_is_redirected_to_their_profile_page()"
 });
 formatter.result({
-  "duration": 87877800,
+  "duration": 157006800,
   "status": "passed"
 });
 formatter.match({
   "location": "UserStatisticsSteps.solutions_are_displayed()"
 });
 formatter.result({
-  "duration": 26711600,
+  "duration": 45055900,
   "status": "passed"
 });
 formatter.match({
   "location": "UserStatisticsSteps.bug_reports_are_displayed()"
 });
 formatter.result({
-  "duration": 26532800,
+  "duration": 46155300,
   "status": "passed"
 });
 formatter.match({
   "location": "UserStatisticsSteps.client_points_are_displayed()"
 });
 formatter.result({
-  "duration": 25330500,
+  "duration": 43411300,
   "status": "passed"
 });
 formatter.background({
@@ -2992,7 +3015,7 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_Login_page()"
 });
 formatter.result({
-  "duration": 517862600,
+  "duration": 841349900,
   "status": "passed"
 });
 formatter.match({
@@ -3005,7 +3028,7 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_username_field(String)"
 });
 formatter.result({
-  "duration": 127354300,
+  "duration": 254170100,
   "status": "passed"
 });
 formatter.match({
@@ -3018,21 +3041,21 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_password_field(String)"
 });
 formatter.result({
-  "duration": 161328200,
+  "duration": 286312700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_clicks_the_Login_button()"
 });
 formatter.result({
-  "duration": 51643200,
+  "duration": 128493700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_is_on_the_main_page()"
 });
 formatter.result({
-  "duration": 380959100,
+  "duration": 718954100,
   "status": "passed"
 });
 formatter.scenario({
@@ -3068,21 +3091,21 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_main_page()"
 });
 formatter.result({
-  "duration": 427779900,
+  "duration": 950217700,
   "status": "passed"
 });
 formatter.match({
   "location": "UserStatisticsSteps.client_clicks_the_profile_tab()"
 });
 formatter.result({
-  "duration": 139379500,
+  "duration": 319862500,
   "status": "passed"
 });
 formatter.match({
   "location": "UserStatisticsSteps.client_is_redirected_to_their_profile_page()"
 });
 formatter.result({
-  "duration": 104152000,
+  "duration": 184130100,
   "status": "passed"
 });
 });
