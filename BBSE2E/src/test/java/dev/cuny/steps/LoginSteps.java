@@ -84,7 +84,9 @@ public class LoginSteps {
 	public void admin_is_on_the_main_page() throws Throwable {
 	    WebDriverWait wait = new WebDriverWait(driver, 5);
 	    wait.until(ExpectedConditions.visibilityOf(mainPage.mainBanner));
+
 	    Assert.assertTrue(mainPage.mainBanner.isDisplayed());
+
 	}
 	
 
