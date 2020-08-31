@@ -24,7 +24,8 @@ public class ViewAndResolveBugsSteps {
 	
 	@When("^Client clicks on an application$")
 	public void client_clicks_on_an_application() throws Throwable {
-		mainPage.firstApplication.click();
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", mainPage.firstApplication);
 	}
 
 	@Then("^The application's bugs are shown$")

@@ -32,4 +32,7 @@ public class MainPage {
 	@FindBy(linkText = "View Bugs")
 	public WebElement viewBugsButton;
 	
+	@FindBy(linkText = "Metrics")
+	public WebElement metricsButton;
+	
 }
