@@ -1,3 +1,4 @@
+
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("ReportBug.feature");
 formatter.feature({
   "line": 1,
@@ -126,11 +127,14 @@ formatter.step({
 });
 formatter.step({
   "line": 17,
+
   "name": "Client fills \"SuspectedLocationTest\" for suspected location",
+
   "keyword": "When "
 });
 formatter.step({
   "line": 18,
+
   "name": "Client selects \"Low\" from the severity dropdown",
   "keyword": "When "
 });

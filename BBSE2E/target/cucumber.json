@@ -88,6 +88,11 @@
         "name": "As a Client, I want to fill out a bug report form, so I can get help with a project bug",
         "description": "",
         "id": "as-a-client,-i-want-to-report-a-bug,-so-that-i-can-get-a-solution;as-a-client,-i-want-to-fill-out-a-bug-report-form,-so-i-can-get-help-with-a-project-bug",
+
+        "line": 14,
+        "name": "Admin viewing application metrics",
+        "description": "",
+        "id": "as-an-admin-i-want-to-view-bug-report-metrics;admin-viewing-application-metrics",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
@@ -142,8 +147,15 @@
                 }
               ],
               "location": "ReportBugSteps.client_enters_for_a_bug_title(String)"
+              "duration": 1727152100,
+              "status": "passed"
             },
-            "keyword": "When "
+            "line": 15,
+            "name": "I am logged in as an admin",
+            "match": {
+              "location": "AdminViewMetrics.i_am_logged_in_as_an_admin()"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
@@ -160,6 +172,13 @@
                 }
               ],
               "location": "ReportBugSteps.client_selects_the_application(String)"
+              "duration": 1624744000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click the metrics tab",
+            "match": {
+              "location": "AdminViewMetrics.i_click_the_metrics_tab()"
             },
             "keyword": "When "
           },
@@ -178,6 +197,13 @@
                 }
               ],
               "location": "ReportBugSteps.client_fills_for_suspected_location(String)"
+              "duration": 11158207000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click the applications button",
+            "match": {
+              "location": "AdminViewMetrics.i_click_the_applications_button()"
             },
             "keyword": "When "
           },
@@ -361,6 +387,13 @@
             "name": "Client is on the main page",
             "match": {
               "location": "LoginSteps.client_is_on_the_main_page()"
+              "duration": 15131500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I see metrics on the applications",
+            "match": {
+              "location": "AdminViewMetrics.i_see_metrics_on_the_applications()"
             },
             "keyword": "Then "
           }
@@ -448,5 +481,12 @@
     "id": "as-a-client,-i-want-to-report-a-bug,-so-that-i-can-get-a-solution",
     "keyword": "Feature",
     "uri": "ReportBug.feature"
+      }
+    ],
+    "name": "As an Admin I want to view bug report metrics",
+    "description": "",
+    "id": "as-an-admin-i-want-to-view-bug-report-metrics",
+    "keyword": "Feature",
+    "uri": "AdminViewBugReportMetrics.feature"
   }
 ]

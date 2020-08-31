@@ -11,11 +11,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import dev.cuny.pages.BugReportPage;
+import dev.cuny.pages.LoginPage;
+import dev.cuny.pages.MainPage;
+import dev.cuny.pages.MetricsPage;
+import dev.cuny.pages.ProfilePage;
 import dev.cuny.pages.CreateApplication;
 import dev.cuny.pages.LoginPage;
 import dev.cuny.pages.ReportBug;
 import dev.cuny.pages.SelectAppNewBug;
 import dev.cuny.pages.UserStatistics;
+import dev.cuny.pages.ViewBugsPage;
+
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources", glue = "dev.cuny.steps", tags = {
@@ -23,11 +30,17 @@ import dev.cuny.pages.UserStatistics;
 public class Runner {
 
 	public static WebDriver driver;
-	public static LoginPage loginpage;
+
+	public static LoginPage loginPage;
+	public static MainPage mainPage;
+	public static BugReportPage bugReportPage;
+	public static ProfilePage profilePage;
 	public static CreateApplication createApplication;
 	public static UserStatistics userStatistics;
 	public static ReportBug reportBug;
-	//public static SelectClass selectClass;
+	public static ViewBugsPage viewBugsPage;
+	public static MetricsPage metricPage;
+
 
 	
 	@BeforeClass
@@ -36,12 +49,18 @@ public class Runner {
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		loginpage = new LoginPage(driver);
+    driver.manage().window().maximize();
+  
+		loginPage = new LoginPage(driver);
+		mainPage = new MainPage(driver);
+		bugReportPage = new BugReportPage(driver);
+		profilePage = new ProfilePage(driver);
+		viewBugsPage = new ViewBugsPage(driver);
 		createApplication = new CreateApplication(driver);
 		userStatistics = new UserStatistics(driver);
 		reportBug = new ReportBug(driver);
-		//selectClass = new SelectClass(driver);
+		metricPage = new MetricsPage(driver);
+
 	}
 
 	@AfterClass
