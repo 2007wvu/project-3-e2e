@@ -42,7 +42,6 @@ public class AdminReviewBugSteps {
 
 	@When("^Client clicks on the approve button$")
 	public void client_clicks_on_the_approve_button() throws Throwable {
-		Thread.sleep(10000);
 	    bugReportPage.approveButton.click();
 	}
 
@@ -53,9 +52,6 @@ public class AdminReviewBugSteps {
 
 	@Then("^priority should be \"([^\"]*)\"$")
 	public void priority_should_be(String arg1) throws Throwable {
-//		String[] temp = {"Low", "Medium", "High"};
-//		List<String> arr = Arrays.asList(temp);
-//		int index = arr.indexOf(arg1);
 		Select priority = new Select(bugReportPage.prioritySelect);
 		Assert.assertEquals(arg1, priority.getFirstSelectedOption().getText());
 	}

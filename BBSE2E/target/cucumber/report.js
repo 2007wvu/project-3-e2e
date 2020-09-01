@@ -1,8 +1,10 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("AdminInspectBugs.feature");
+
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("ReportBug.feature");
 formatter.feature({
   "line": 1,
-  "name": "Admin views and inspects submitted bugs",
+  "name": "As a Client, I want to report a bug, So that I can get a solution",
   "description": "",
+<<<<<<< HEAD
   "id": "admin-views-and-inspects-submitted-bugs",
   "keyword": "Feature"
 });
@@ -3059,6 +3061,9 @@ formatter.feature({
   "name": "As a Clien, I want to see various statistics, so that I can view leaderboard status \u0026 my solutions",
   "description": "",
   "id": "as-a-clien,-i-want-to-see-various-statistics,-so-that-i-can-view-leaderboard-status-\u0026-my-solutions",
+=======
+  "id": "as-a-client,-i-want-to-report-a-bug,-so-that-i-can-get-a-solution",
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "keyword": "Feature"
 });
 formatter.background({
@@ -3097,7 +3102,11 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_Login_page()"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 430472700,
+=======
+  "duration": 1550517700,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "status": "passed"
 });
 formatter.match({
@@ -3110,7 +3119,11 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_username_field(String)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 140408800,
+=======
+  "duration": 157333700,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "status": "passed"
 });
 formatter.match({
@@ -3123,34 +3136,46 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_password_field(String)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 106325200,
+=======
+  "duration": 136932600,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_clicks_the_Login_button()"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 51163600,
+=======
+  "duration": 77885900,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_is_on_the_main_page()"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 256819600,
+=======
+  "duration": 1642711900,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "status": "passed"
 });
 formatter.scenario({
   "line": 11,
-  "name": "As a Client, I want to view the leaderboard to see the top devs and their points by rank",
+  "name": "As a Client, I want to fill out a bug report form, so I can get help with a project bug",
   "description": "",
-  "id": "as-a-clien,-i-want-to-see-various-statistics,-so-that-i-can-view-leaderboard-status-\u0026-my-solutions;as-a-client,-i-want-to-view-the-leaderboard-to-see-the-top-devs-and-their-points-by-rank",
+  "id": "as-a-client,-i-want-to-report-a-bug,-so-that-i-can-get-a-solution;as-a-client,-i-want-to-fill-out-a-bug-report-form,-so-i-can-get-help-with-a-project-bug",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
       "line": 10,
-      "name": "@UserStory6.1"
+      "name": "@UserStory3.1"
     }
   ]
 });
@@ -3161,186 +3186,242 @@ formatter.step({
 });
 formatter.step({
   "line": 13,
-  "name": "Leaderboard is displayed",
+  "name": "Clien clicks on the Report New Bug tab",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 14,
+  "name": "Client is on the on the Report New Bug page",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "LoginSteps.client_is_on_the_main_page()"
-});
+<<<<<<< HEAD
 formatter.result({
   "duration": 400052000,
   "status": "passed"
+=======
+formatter.step({
+  "line": 15,
+  "name": "Client enters \"AppTitleTest\" for a bug title",
+  "keyword": "When "
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
 });
-formatter.match({
-  "location": "UserStatisticsSteps.leaderboard_is_displayed()"
+formatter.step({
+  "line": 16,
+  "name": "Client selects \"Bug Bounty System\" from the application dropdown",
+  "keyword": "When "
 });
+<<<<<<< HEAD
 formatter.result({
   "duration": 40101000,
   "status": "passed"
-});
-formatter.background({
-  "line": 3,
-  "name": "Client logs into their account",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 4,
-  "name": "Client is on the Login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
-  "name": "Client types \"posttest\" into the username field",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 6,
-  "name": "Client types \"password\" into the password field",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 7,
-  "name": "Client clicks the Login button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "Client is on the main page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginSteps.client_is_on_the_Login_page()"
-});
-formatter.result({
-  "duration": 481834000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "posttest",
-      "offset": 14
-    }
-  ],
-  "location": "LoginSteps.client_types_into_the_username_field(String)"
-});
-formatter.result({
-  "duration": 115524600,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "password",
-      "offset": 14
-    }
-  ],
-  "location": "LoginSteps.client_types_into_the_password_field(String)"
-});
-formatter.result({
-  "duration": 111628500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.client_clicks_the_Login_button()"
-});
-formatter.result({
-  "duration": 52536200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.client_is_on_the_main_page()"
-});
-formatter.result({
-  "duration": 406288800,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 16,
-  "name": "As a Client, I want to view my dev page to see my solution history, bug reports, \u0026 points",
-  "description": "",
-  "id": "as-a-clien,-i-want-to-see-various-statistics,-so-that-i-can-view-leaderboard-status-\u0026-my-solutions;as-a-client,-i-want-to-view-my-dev-page-to-see-my-solution-history,-bug-reports,-\u0026-points",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 15,
-      "name": "@UserStory6.2"
-    }
-  ]
-});
+=======
 formatter.step({
   "line": 17,
-  "name": "Client is on the main page",
-  "keyword": "Given "
+
+  "name": "Client fills \"SuspectedLocationTest\" for suspected location",
+
+  "keyword": "When "
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
 });
 formatter.step({
   "line": 18,
-  "name": "Client clicks the profile tab",
+
+  "name": "Client selects \"Low\" from the severity dropdown",
   "keyword": "When "
 });
 formatter.step({
   "line": 19,
-  "name": "Client is redirected to their profile page",
-  "keyword": "Then "
+  "name": "Client selects \"Medium\" from the priority dropdown",
+  "keyword": "When "
 });
 formatter.step({
   "line": 20,
-  "name": "Solutions are displayed",
-  "keyword": "Then "
+  "name": "Client types \"Bug description test\" into the description field",
+  "keyword": "When "
 });
 formatter.step({
   "line": 21,
-  "name": "Bug reports are displayed",
-  "keyword": "Then "
+  "name": "Client types \"Bug reproduction steps test\" into reproduction field",
+  "keyword": "When "
 });
 formatter.step({
   "line": 22,
-  "name": "Client points are displayed",
+  "name": "Client clicks the submit button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 23,
+  "name": "Client is on the Bug Report View",
   "keyword": "Then "
 });
 formatter.match({
   "location": "LoginSteps.client_is_on_the_main_page()"
 });
 formatter.result({
+<<<<<<< HEAD
+  "duration": 481834000,
+=======
+  "duration": 50297600,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
+  "status": "passed"
+});
+formatter.match({
+  "location": "ReportBugSteps.clien_clicks_on_the_Report_New_Bug_tab()"
+});
+formatter.result({
+  "duration": 86863900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ReportBugSteps.client_is_on_the_on_the_Report_New_Bug_page()"
+});
+formatter.result({
+<<<<<<< HEAD
+  "duration": 115524600,
+=======
+  "duration": 318823700,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "AppTitleTest",
+      "offset": 15
+    }
+  ],
+  "location": "ReportBugSteps.client_enters_for_a_bug_title(String)"
+});
+formatter.result({
+<<<<<<< HEAD
+  "duration": 111628500,
+=======
+  "duration": 130602100,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Bug Bounty System",
+      "offset": 16
+    }
+  ],
+  "location": "ReportBugSteps.client_selects_the_application(String)"
+});
+formatter.result({
+<<<<<<< HEAD
+  "duration": 52536200,
+=======
+  "duration": 3412076000,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "SuspectedLocationTest",
+      "offset": 14
+    }
+  ],
+  "location": "ReportBugSteps.client_fills_for_suspected_location(String)"
+});
+formatter.result({
+<<<<<<< HEAD
+  "duration": 406288800,
+=======
+  "duration": 91355900,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Low",
+      "offset": 16
+    }
+  ],
+  "location": "ReportBugSteps.client_selects_from_the_severity_dropdown(String)"
+});
+formatter.result({
+<<<<<<< HEAD
   "duration": 345771500,
+=======
+  "duration": 105873000,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "status": "passed"
 });
 formatter.match({
-  "location": "UserStatisticsSteps.client_clicks_the_profile_tab()"
+  "arguments": [
+    {
+      "val": "Medium",
+      "offset": 16
+    }
+  ],
+  "location": "ReportBugSteps.client_selects_from_the_priority_dropdown(String)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 140683300,
+=======
+  "duration": 111812100,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "status": "passed"
 });
 formatter.match({
-  "location": "UserStatisticsSteps.client_is_redirected_to_their_profile_page()"
+  "arguments": [
+    {
+      "val": "Bug description test",
+      "offset": 14
+    }
+  ],
+  "location": "ReportBugSteps.client_types_into_the_description_field(String)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 97326200,
+=======
+  "duration": 189918100,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "status": "passed"
 });
 formatter.match({
-  "location": "UserStatisticsSteps.solutions_are_displayed()"
+  "arguments": [
+    {
+      "val": "Bug reproduction steps test",
+      "offset": 14
+    }
+  ],
+  "location": "ReportBugSteps.client_types_into_reproduction_field(String)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 26176600,
+=======
+  "duration": 185886700,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "status": "passed"
 });
 formatter.match({
-  "location": "UserStatisticsSteps.bug_reports_are_displayed()"
+  "location": "ReportBugSteps.client_clicks_the_submit_button()"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 28173300,
+=======
+  "duration": 97641500,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "status": "passed"
 });
 formatter.match({
-  "location": "UserStatisticsSteps.client_points_are_displayed()"
+  "location": "ReportBugSteps.client_is_on_the_Bug_Report_View()"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 26768800,
+=======
+  "duration": 292679600,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "status": "passed"
 });
 formatter.background({
@@ -3379,7 +3460,11 @@ formatter.match({
   "location": "LoginSteps.client_is_on_the_Login_page()"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 415276600,
+=======
+  "duration": 390135000,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "status": "passed"
 });
 formatter.match({
@@ -3392,7 +3477,11 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_username_field(String)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 118697900,
+=======
+  "duration": 143160900,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "status": "passed"
 });
 formatter.match({
@@ -3405,71 +3494,119 @@ formatter.match({
   "location": "LoginSteps.client_types_into_the_password_field(String)"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 126026000,
+=======
+  "duration": 146098000,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_clicks_the_Login_button()"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 48924900,
+=======
+  "duration": 70183200,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.client_is_on_the_main_page()"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 232990600,
+=======
+  "duration": 1540847400,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "status": "passed"
 });
 formatter.scenario({
-  "line": 25,
-  "name": "As a Client, I want to view my profile page to see my solution history, bug reports, \u0026 points",
+  "line": 26,
+  "name": "As a Client, I want to cancel a bug report form, so I can discard the information",
   "description": "",
-  "id": "as-a-clien,-i-want-to-see-various-statistics,-so-that-i-can-view-leaderboard-status-\u0026-my-solutions;as-a-client,-i-want-to-view-my-profile-page-to-see-my-solution-history,-bug-reports,-\u0026-points",
+  "id": "as-a-client,-i-want-to-report-a-bug,-so-that-i-can-get-a-solution;as-a-client,-i-want-to-cancel-a-bug-report-form,-so-i-can-discard-the-information",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 24,
-      "name": "@UserStory6.3"
+      "line": 25,
+      "name": "@UserStory3.1.1"
     }
   ]
 });
 formatter.step({
-  "line": 26,
+  "line": 27,
   "name": "Client is on the main page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 27,
-  "name": "Client clicks the profile tab",
+  "line": 28,
+  "name": "Clien clicks on the Report New Bug tab",
   "keyword": "When "
 });
 formatter.step({
-  "line": 28,
-  "name": "Client is redirected to their profile page",
+  "line": 29,
+  "name": "Client is on the on the Report New Bug page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 30,
+  "name": "Client clicks the cancel button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 31,
+  "name": "Client is on the main page",
   "keyword": "Then "
 });
 formatter.match({
   "location": "LoginSteps.client_is_on_the_main_page()"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 413173900,
+=======
+  "duration": 53009600,
   "status": "passed"
 });
 formatter.match({
-  "location": "UserStatisticsSteps.client_clicks_the_profile_tab()"
+  "location": "ReportBugSteps.clien_clicks_on_the_Report_New_Bug_tab()"
 });
 formatter.result({
+  "duration": 79800800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ReportBugSteps.client_is_on_the_on_the_Report_New_Bug_page()"
+});
+formatter.result({
+  "duration": 207085000,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
+  "status": "passed"
+});
+formatter.match({
+  "location": "ReportBugSteps.client_clicks_the_cancel_button()"
+});
+formatter.result({
+<<<<<<< HEAD
   "duration": 131718000,
+=======
+  "duration": 116346100,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "status": "passed"
 });
 formatter.match({
-  "location": "UserStatisticsSteps.client_is_redirected_to_their_profile_page()"
+  "location": "LoginSteps.client_is_on_the_main_page()"
 });
 formatter.result({
+<<<<<<< HEAD
   "duration": 87678500,
+=======
+  "duration": 48911100,
+>>>>>>> 4086a1fc9140ccdf9d664624a1c136f4f148723a
   "status": "passed"
 });
 });
