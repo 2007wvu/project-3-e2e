@@ -39,3 +39,7 @@ Feature: Filter and sort bugs on View Bugs page
 		Then Bug report view is displayed
 		When Client clicks on return to view bugs button
 		Then Resolved bugs table is displayed
+		
+	Scenario: Client searches bug reports by location
+		Given Client is on the main page
+		

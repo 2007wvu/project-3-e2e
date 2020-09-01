@@ -26,15 +26,15 @@ public class ViewBugsPage {
 	@FindBy(linkText = "Inspect")
 	public WebElement inspectButton;
 	
-	@FindBy(id = "inspectButton67")
-	public WebElement inspectButtonRequested;
-	
-	@FindBy(id = "inspectButton31")
-	public WebElement inspectButtonUnresolved;
-	
-	@FindBy(id = "inspectButton1")
-	public WebElement inspectButtonResolved;
-	
+//	@FindBy(id = "inspectButton67")
+//	public WebElement inspectButtonRequested;
+//	
+//	@FindBy(id = "inspectButton31")
+//	public WebElement inspectButtonUnresolved;
+//	
+//	@FindBy(id = "inspectButton1")
+//	public WebElement inspectButtonResolved;
+//	
 //	@FindBy(id = "bugReport31")
 //	public WebElement bugReportTitle;
 	
