@@ -20,6 +20,9 @@ public class ViewBugsPage {
 	@FindBy(id = "mat-tab-label-0-1")
 	public WebElement unresolvedBugsButton;
 	
+	@FindBy(id = "mat-tab-label-0-2")
+	public WebElement requestedBugsButton;
+	
 	@FindBy(linkText = "Inspect")
 	public WebElement inspectButton;
 	

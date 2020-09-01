@@ -113,6 +113,7 @@ public class ViewAndResolveBugsSteps {
 
 	@Then("^Client clicks inspect button$")
 	public void client_clicks_inspect_button() throws Throwable {
+		Thread.sleep(1000);
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", viewBugsPage.inspectButton);
 	}
@@ -128,4 +129,9 @@ public class ViewAndResolveBugsSteps {
 	    Assert.assertEquals(bugReportPage.bugStatus.getText(), "Resolved");
 	}
 	
+	@When("^Client clicks on the return to view bugs button$")
+	public void client_clicks_on_the_return_to_view_bugs_button() throws Throwable {
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", bugReportPage.returnToViewBugsButton);
+	}
 }
