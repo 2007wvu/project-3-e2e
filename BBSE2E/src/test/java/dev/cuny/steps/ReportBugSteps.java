@@ -75,8 +75,8 @@ public class ReportBugSteps {
 		reportBug.reproductionHTML.sendKeys("Steps Steps");
 	}
 
-	@When("^Client clicks the submit button$")
-	public String client_clicks_the_submit_button() throws Throwable {
+	@When("^Client clicks the submit bug button$")
+	public String client_clicks_the_submit_bug_button() throws Throwable {
 		
 		String bugTitle = reportBug.bugTitle.getAttribute("innerText");
 		reportBug.BugSubmit.click();
@@ -87,15 +87,15 @@ public class ReportBugSteps {
 	@Then("^Client is on the Bug Report View$")
 	public void client_is_on_the_Bug_Report_View() throws Throwable {
 		
-		String reportedBugTitle = client_clicks_the_submit_button();
+		String reportedBugTitle = client_clicks_the_submit_bug_button();
 				
 		Assert.assertEquals(reportBug.BugTitleReport.getText(), reportedBugTitle);
 	}
 
 
 
-	@When("^Client clicks the cancel button$")
-	public void client_clicks_the_cancel_button() throws Throwable {
+	@When("^Client clicks the cancel bug button$")
+	public void client_clicks_the_cancel_bug_button() throws Throwable {
 		reportBug.BugCancel.click();
 	}
 
