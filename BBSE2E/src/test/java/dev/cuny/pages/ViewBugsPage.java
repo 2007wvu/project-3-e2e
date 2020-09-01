@@ -25,6 +25,24 @@ public class ViewBugsPage {
 	
 	@FindBy(linkText = "Inspect")
 	public WebElement inspectButton;
+
+	@FindBy(id="viewBugs")
+	public WebElement viewBugsTab;
+	
+	//@FindBy(id="mat-tab-label-1-2")
+	//public WebElement unresolvedBugs;
+	
+	@FindBy(id="inspectButton22")
+	public WebElement inspectButton22;
+	
+	@FindBy(id="postedSolutionsTitle")
+	public WebElement postedSolutionsTitle;
+	
+	@FindBy(id="solution10")
+	public WebElement solution10;
+	
+	@FindBy(id="solutStat")
+	public WebElement solutStat;
 	
 //	@FindBy(id = "inspectButton67")
 //	public WebElement inspectButtonRequested;
@@ -73,4 +91,5 @@ public class ViewBugsPage {
 	
 	@FindBy(id = "unresolvedBugsTable")
 	public WebElement unresolvedBugsTable;
+
 }

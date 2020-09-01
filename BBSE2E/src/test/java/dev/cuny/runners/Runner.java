@@ -12,16 +12,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import dev.cuny.pages.BugReportPage;
+import dev.cuny.pages.CreateApplication;
 import dev.cuny.pages.LoginPage;
 import dev.cuny.pages.MainPage;
 import dev.cuny.pages.MetricsPage;
 import dev.cuny.pages.ProfilePage;
-import dev.cuny.pages.CreateApplication;
-import dev.cuny.pages.LoginPage;
 import dev.cuny.pages.ReportBug;
-import dev.cuny.pages.SelectAppNewBug;
 import dev.cuny.pages.UserStatistics;
 import dev.cuny.pages.ViewBugsPage;
+
 
 
 @RunWith(Cucumber.class)
