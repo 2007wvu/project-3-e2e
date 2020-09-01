@@ -21,48 +21,48 @@ public class AdminViewMetrics {
 	public MetricsPage metricPage = Runner.metricPage;
 	public MainPage mainPage = Runner.mainPage;
 	
-	
-	@Given("^I am logged in as an admin$")
-	public void i_am_logged_in_as_an_admin() throws Throwable {
-	    driver.get("http://localhost:4200");
-	    lpage.username.sendKeys("TheMatrix");
-	    lpage.password.sendKeys("password");
-	    lpage.loginButton.click();
-	}
 
-	@When("^I click the metrics tab$")
-	public void i_click_the_metrics_tab() throws Throwable {
+
+
+	@When("^Admin clicks the metrics tab$")
+	public void admin_clicks_the_metrics_tab() throws Throwable {
 	    mainPage.metricsButton.click();
 	}
+	
 
-	@Then("^I am viewing metrics for bug bounty$")
-	public void i_am_viewing_metrics_for_bug_bounty() throws Throwable {
+	@Then("^Admin is viewing metrics for bug bounty$")
+	public void admin_is_viewing_metrics_for_bug_bounty() throws Throwable {
 	    Assert.assertEquals(driver.getCurrentUrl(), "http://localhost:4200/metrics");
 	}
-
+	
 	@When("^I click the developers button$")
 	public void i_click_the_developers_button() throws Throwable {
 	    metricPage.developerButton.click();
 	}
-
-	@Then("^I see metrics on the developers$")
-	public void i_see_metrics_on_the_developers() throws Throwable {
+	
+	@When("^Admin clicks the developers button$")
+	public void admin_clicks_the_developers_button() throws Throwable {
+	    metricPage.developerButton.click();
+	}
+	
+	@Then("^Admin sees metrics on the developers$")
+	public void admin_sees_metrics_on_the_developers() throws Throwable {
 		String result = metricPage.peopleCounter.getText();
 		Assert.assertNotNull(result);
 	}
 
-	@When("^I click the applications button$")
-	public void i_click_the_applications_button() throws Throwable {
-		Thread.sleep(10000);
+
+	@When("^Admin clicks the applications button$")
+	public void admin_clicks_the_applications_button() throws Throwable {
 		metricPage.applicationSideButton.click();
 		System.out.println("canvas size" + metricPage.applicationGraph.getSize());
 		Thread.sleep(1000);
 	}
 
-	@Then("^I see metrics on the applications$")
-	public void i_see_metrics_on_the_applications() throws Throwable {
+
+	@Then("^Admin sees metrics on the applications$")
+	public void admin_sees_metrics_on_the_applications() throws Throwable {
 		Dimension size = new Dimension(1292,400);
 		Assert.assertEquals(metricPage.applicationGraph.getSize(), size);
 	}
-
 }
