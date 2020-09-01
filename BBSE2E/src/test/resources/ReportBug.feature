@@ -19,7 +19,7 @@ Feature: As a Client, I want to report a bug, So that I can get a solution
 		When Client selects "Medium" from the priority dropdown
 		When Client types "Bug description test" into the description field
 		When Client types "Bug reproduction steps test" into reproduction field
-		When Client clicks the submit button
+		When Client clicks the submit bug button
 		Then Client is on the Bug Report View
 		
 	@UserStory3.1.1	
@@ -27,7 +27,7 @@ Feature: As a Client, I want to report a bug, So that I can get a solution
 		Given Client is on the main page 
 		When Clien clicks on the Report New Bug tab
 		Then Client is on the on the Report New Bug page
-		When Client clicks the cancel button
+		When Client clicks the cancel bug button
 		Then Client is on the main page 
 
 		
