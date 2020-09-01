@@ -37,9 +37,6 @@ public class LoginPage {
 	@FindBy(id = "loginButton")
 	public WebElement loginButton;
 	
-	@FindBy(id = "mainBanner")
-	public WebElement mainBanner;
-	
 	@FindBy(id = "loginError")
 	public WebElement loginError;
 	
