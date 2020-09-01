@@ -2,7 +2,7 @@ Feature: Client visits profile
 
 	Background: Client logs in
 		Given Client is on the Login page
-		When Client types "Emailman" into the username field
+		When Client types "jr" into the username field
 		When Client types "password" into the password field
 		When Client clicks the Login button
 		Then Client should be on the main page
@@ -12,3 +12,14 @@ Feature: Client visits profile
 		Then Client should be on the profile page
 		Then Table of submitted bugs should be shown
 		Then Table of submitted solutions should be shown
+		
+	Scenario: Client updates password
+		When Client clicks on the profile button
+		Then Client should be on the profile page
+		When Client clicks update password link
+		Then Prompt should appear
+		When Client enters "password" as current password
+		When Client enters "betterPassword" as new password 
+		When Client enters "betterPassword" in verify field
+		When Client clicks password submit button
+		Then An alert should appear

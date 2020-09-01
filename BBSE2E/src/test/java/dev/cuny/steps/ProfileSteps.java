@@ -2,6 +2,8 @@ package dev.cuny.steps;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -36,4 +38,43 @@ public class ProfileSteps {
 		Assert.assertTrue(profilePage.solutionTable.isDisplayed());
 	}
 	
+	@When("^Client clicks update password link$")
+	public void client_clicks_update_password_link() throws Throwable {
+	    profilePage.updatePassword.click();
+	}
+
+	@Then("^Prompt should appear$")
+	public void prompt_should_appear() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOf(profilePage.currentPassword));
+	    Assert.assertTrue(profilePage.currentPassword.isDisplayed());
+	}
+
+	@When("^Client enters \"([^\"]*)\" as current password$")
+	public void client_enters_as_current_password(String arg1) throws Throwable {
+	    profilePage.currentPassword.sendKeys(arg1);
+	}
+
+	@When("^Client enters \"([^\"]*)\" as new password$")
+	public void client_enters_as_new_password(String arg1) throws Throwable {
+	    profilePage.newPassword.sendKeys(arg1);
+	}
+
+	@When("^Client enters \"([^\"]*)\" in verify field$")
+	public void client_enters_in_verify_field(String arg1) throws Throwable {
+		profilePage.verifyPassword.sendKeys(arg1);
+	}
+
+	@When("^Client clicks password submit button$")
+	public void client_clicks_password_submit_button() throws Throwable {
+	    profilePage.submitButton.click();
+	}
+
+	@Then("^An alert should appear$")
+	public void an_alert_should_appear() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.alertIsPresent());
+	    Assert.assertEquals(driver.switchTo().alert().getText(), "password successfully updated");
+	    driver.switchTo().alert().accept();
+	}
 }
