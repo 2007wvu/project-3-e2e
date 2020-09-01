@@ -1,5 +1,7 @@
 package dev.cuny.steps;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import cucumber.api.PendingException;
@@ -43,23 +45,30 @@ public class FilterAndSortBugsSteps {
 	
 	@When("^Client clicks inspect button on a requested bug$")
 	public void client_clicks_inspect_button_on_a_requested_bug() throws Throwable {
-		WebDriverWait wait = new WebDriverWait(driver, 2);
-	    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.inspectButtonRequested));
-	    viewBugsPage.inspectButtonRequested.click();
+//		WebDriverWait wait = new WebDriverWait(driver, 2);
+//	    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.inspectButtonRequested));
+	    Thread.sleep(2000);
+	    WebElement inspectButtonRequested = driver.findElement(By.id("inspectButton"));
+	    inspectButtonRequested.click();
 	}
 
 	@When("^Client clicks inspect button on a unresolved bug$")
 	public void client_clicks_inspect_button_on_a_unresolved_bug() throws Throwable {
-		WebDriverWait wait = new WebDriverWait(driver, 2);
-	    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.inspectButtonUnresolved));
-	    viewBugsPage.inspectButtonUnresolved.click();
+//		WebDriverWait wait = new WebDriverWait(driver, 2);
+//	    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.inspectButtonUnresolved));
+//	    viewBugsPage.inspectButtonUnresolved.click();
+		Thread.sleep(2000);
+	    WebElement inspectButtonUnresolved = driver.findElement(By.id("inspectButton"));
+	    inspectButtonUnresolved.click();
 	}
 
 	@When("^Client clicks inspect button on a resolved bug$")
 	public void client_clicks_inspect_button_on_a_resolved_bug() throws Throwable {
-		WebDriverWait wait = new WebDriverWait(driver, 2);
-	    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.inspectButtonResolved));
-	    viewBugsPage.inspectButtonResolved.click();
+//		WebDriverWait wait = new WebDriverWait(driver, 2);
+//	    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.inspectButtonResolved));
+		Thread.sleep(2000);
+		WebElement inspectButtonResolved = driver.findElement(By.id("inspectButton"));
+	    inspectButtonResolved.click();
 	}
 	
 	@Then("^Bug report view is displayed$")
