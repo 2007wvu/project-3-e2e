@@ -22,4 +22,19 @@ public class ProfilePage {
 	
 	@FindBy(id = "solutionTableDiv")
 	public WebElement solutionTable;
+	
+	@FindBy(linkText = "Update Password")
+	public WebElement updatePassword;
+	
+	@FindBy(id = "currentPassword")
+	public WebElement currentPassword;
+	
+	@FindBy(id = "newPassword")
+	public WebElement newPassword;
+	
+	@FindBy(id = "verifyPassword")
+	public WebElement verifyPassword;
+	
+	@FindBy(id = "submitButton")
+	public WebElement submitButton;
 }
