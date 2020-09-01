@@ -55,7 +55,7 @@ public class ViewAndResolveBugsSteps {
 
 	@Then("^The Bug's page is shown$")
 	public void the_Bug_s_page_is_shown() throws Throwable {
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 	    Assert.assertTrue(bugReportPage.bugReportTitle.isDisplayed());
 	}
 
