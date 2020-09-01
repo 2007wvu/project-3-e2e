@@ -26,18 +26,42 @@ public class FilterAndSortBugsSteps {
 	public void client_clicks_on_the_requested_bugs_tab() throws Throwable {
 	    viewBugsPage.requestedBugsTab.click();
 	}
+	@When("^Client clicks on the unresolved bugs tab$")
+	public void client_clicks_on_the_unresolved_bugs_tab() throws Throwable {
+		viewBugsPage.unresolvedBugsTab.click();
+	}	
+	@When("^Client clicks on the resolved bugs tab$")
+	public void client_clicks_on_the_resolved_bugs_tab() throws Throwable {
+		viewBugsPage.resolvedBugsTab.click();
+	}
 	@Then("^Requested bugs table is displayed$")
 	public void requested_bugs_table_is_displayed() throws Throwable {
 	    WebDriverWait wait = new WebDriverWait(driver, 2);
 	    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.adminBugsTable));
 	    Assert.assertTrue(viewBugsPage.adminBugsTable.isDisplayed());
 	}
-	@When("^Client clicks inspect button on a bug$")
-	public void client_clicks_inspect_button_on_a_bug() throws Throwable {
+	
+	@When("^Client clicks inspect button on a requested bug$")
+	public void client_clicks_inspect_button_on_a_requested_bug() throws Throwable {
 		WebDriverWait wait = new WebDriverWait(driver, 2);
-	    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.inspectButton67));
-	    viewBugsPage.inspectButton67.click();
+	    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.inspectButtonRequested));
+	    viewBugsPage.inspectButtonRequested.click();
 	}
+
+	@When("^Client clicks inspect button on a unresolved bug$")
+	public void client_clicks_inspect_button_on_a_unresolved_bug() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.inspectButtonUnresolved));
+	    viewBugsPage.inspectButtonUnresolved.click();
+	}
+
+	@When("^Client clicks inspect button on a resolved bug$")
+	public void client_clicks_inspect_button_on_a_resolved_bug() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.inspectButtonResolved));
+	    viewBugsPage.inspectButtonResolved.click();
+	}
+	
 	@Then("^Bug report view is displayed$")
 	public void bug_report_view_is_displayed() throws Throwable {
 		WebDriverWait wait = new WebDriverWait(driver, 2);
@@ -56,14 +80,10 @@ public class FilterAndSortBugsSteps {
 	    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.resolvedBugsTable));
 	    Assert.assertTrue(viewBugsPage.resolvedBugsTable.isDisplayed());
 	}
-//	@When("^Client clicks on view bugs button$")
-//	public void client_clicks_on_view_bugs_button() throws Throwable {
-//	    mainPage.viewBugsButton.click();
-//	}
-//	@Then("^Client should be on view bugs page$")
-//	public void client_should_be_on_view_bugs_page() throws Throwable {
-//		WebDriverWait wait = new WebDriverWait(driver, 2);
-//	    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.resolvedBugsTable));
-//	    Assert.assertTrue(viewBugsPage.resolvedBugsTable.isDisplayed());
-//	}
+	@Then("^Unresolved bugs table is displayed$")
+	public void unresolved_bugs_table_is_displayed() throws Throwable {
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.unresolvedBugsTable));
+	    Assert.assertTrue(viewBugsPage.unresolvedBugsTable.isDisplayed());
+	}
 }
