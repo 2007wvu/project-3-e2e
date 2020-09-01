@@ -1,5 +1,7 @@
 package dev.cuny.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,4 +37,6 @@ public class MainPage {
 	@FindBy(linkText = "Metrics")
 	public WebElement metricsButton;
 	
+	@FindBy(className = "mainBugTopLabel")
+	public List<WebElement> bugList;
 }
