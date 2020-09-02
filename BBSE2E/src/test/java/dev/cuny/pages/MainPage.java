@@ -37,6 +37,9 @@ public class MainPage {
 	@FindBy(linkText = "Metrics")
 	public WebElement metricsButton;
 	
-	@FindBy(className = "mainBugTopLabel")
+	@FindBy(id = "resolveStatus")
 	public List<WebElement> bugList;
+	
+	@FindBy(className = "application-select")
+	public WebElement applicationContainer;
 }
