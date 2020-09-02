@@ -7,14 +7,13 @@ Feature: Inspect and resolve bugs on Home page
 		When Client clicks the Login button
 		Then Client should be on the main page
 		
-	Scenario: Client expands and shrinks application
-		When Client clicks on an application
-		Then The application's bugs are shown
-		When Client clicks on the application
-		Then The application's bugs are not shown
+#	Scenario: Client expands and shrinks application
+#		When Client clicks on an application
+#		Then The application's bugs are shown
+#		When Client clicks on the application
+#		Then The application's bugs are not shown
 		
 	Scenario: Client clicks on bug and submits solution
-		When Client clicks on an application
 		When Client clicks on a bug link
 		Then The Bug's page is shown
 		When Client enters "This is a great solution" into the title input
@@ -23,7 +22,6 @@ Feature: Inspect and resolve bugs on Home page
 		Then The solution is added under Posted Solution(s)
 		
 	Scenario: Client clicks on bug and cancels submission
-		When Client clicks on an application
 		When Client clicks on a bug link
 		Then The Bug's page is shown
 		When Client enters "This is a great solution" into the title input

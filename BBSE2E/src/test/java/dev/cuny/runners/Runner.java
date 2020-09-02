@@ -47,7 +47,7 @@ public class Runner {
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-    driver.manage().window().maximize();
+		driver.manage().window().maximize();
   
 		loginPage = new LoginPage(driver);
 		mainPage = new MainPage(driver);
