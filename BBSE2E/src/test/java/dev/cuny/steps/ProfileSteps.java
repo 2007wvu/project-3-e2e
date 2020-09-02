@@ -30,11 +30,15 @@ public class ProfileSteps {
 
 	@Then("^Table of submitted bugs should be shown$")
 	public void table_of_submitted_bugs_should_be_shown() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOf(profilePage.bugTable));
 		Assert.assertTrue(profilePage.bugTable.isDisplayed());
 	}
 
 	@Then("^Table of submitted solutions should be shown$")
 	public void table_of_submitted_solutions_should_be_shown() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOf(profilePage.solutionTable));
 		Assert.assertTrue(profilePage.solutionTable.isDisplayed());
 	}
 	
@@ -76,5 +80,15 @@ public class ProfileSteps {
 		wait.until(ExpectedConditions.alertIsPresent());
 	    Assert.assertEquals(driver.switchTo().alert().getText(), "password successfully updated");
 	    driver.switchTo().alert().accept();
+	}
+	
+	@When("^Client clicks on the my bugs button$")
+	public void client_clicks_on_the_my_bugs_button() throws Throwable {
+		profilePage.bugsTitle.click();
+	}
+
+	@When("^Client clicks on the my solutions button$")
+	public void client_clicks_on_the_my_solutions_button() throws Throwable {
+		profilePage.solutionsTitle.click();
 	}
 }

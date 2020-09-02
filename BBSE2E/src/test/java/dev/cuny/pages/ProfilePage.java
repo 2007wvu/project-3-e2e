@@ -37,4 +37,10 @@ public class ProfilePage {
 	
 	@FindBy(id = "submitButton")
 	public WebElement submitButton;
+	
+	@FindBy(id = "SolutionsTableTitle")
+	public WebElement solutionsTitle;
+	
+	@FindBy(id = "BugsTableTitle")
+	public WebElement bugsTitle;
 }
