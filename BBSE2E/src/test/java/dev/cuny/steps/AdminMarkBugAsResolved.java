@@ -78,11 +78,7 @@ public class AdminMarkBugAsResolved {
 
 	@When("^Admin change the status to rejected$")
 	public void admin_change_the_status_to_rejected() throws Throwable {
-		Thread.sleep(2000);
-		//viewBugsPage.solutStat.sendKeys(Keys.TAB);
 		viewBugsPage.solutStat.sendKeys("Rejected");
-		
-		
 	}
 
 	@Then("^Solution status is changed$")

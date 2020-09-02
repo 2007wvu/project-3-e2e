@@ -65,17 +65,6 @@ public class ViewBugsPage {
 	@FindBy (id = "return-to-view-bugs")
 	public WebElement returnToViewBugsButton;
 	
-//	@FindBy(id = "mat-tab-label-0-0")
-//	public WebElement resolvedBugsTab;
-//	
-//	@FindBy(id = "mat-tab-label-0-1")
-//	public WebElement unresolvedBugsTab;
-//	
-////	@FindBy(id = "mat-tab-label-0-2")
-////	public WebElement requestedBugsTab;
-//	@FindBy(xpath ="//*[contains(@id, '-2')]")
-//	public WebElement requestedBugsTab;
-	
 	@FindBy(id = "resolvedBugsTable")
 	public WebElement resolvedBugsTable;
 	
@@ -87,4 +76,33 @@ public class ViewBugsPage {
 	
 	
 
+	@FindBy(xpath = "//*[@id=\"resolvedBugsTable\"]/div[2]/table/thead/tr/th[1]/div/button")
+	public WebElement titleSortButton;
+	
+	@FindBy(xpath = "//*[@id=\"resolvedBugsTable\"]/div[2]/table/thead/tr/th[6]/div/button")
+	public WebElement dateSortButton;
+	
+	@FindBy(xpath = "//*[@id=\"resolvedBugsTable\"]/div[2]/table/thead/tr/th[4]/div/button")
+	public WebElement severitySortButton;
+	
+	@FindBy(xpath = "//*[@id=\"resolvedBugsTable\"]/div[2]/table/thead/tr/th[5]/div/button")
+	public WebElement prioritySortButton;
+	
+	@FindBy(xpath = "//*[@id=\"resolvedBugsTable\"]/div[2]/table/thead/tr/th[2]/div/button")
+	public WebElement applicationSortButton;
+	
+	@FindBy(xpath = "//*[@id=\"resolvedBugsTable\"]/div[2]/table/thead/tr/th[3]/div/button")
+	public WebElement locationSortButton;
+	
+	@FindBy(xpath = "//*[@id=\"resolvedBugsTable\"]/div[2]/table/thead/tr/th[7]/div/button")
+	public WebElement developerSortButton;
+
+	@FindBy(xpath = "//*[@id=\"appsort\"]/div/mat-form-field")
+	public WebElement applicationFilter;
+	
+	@FindBy(xpath = "//*[@id=\"severitysort\"]/div/mat-form-field")
+	public WebElement severityFilter;
+	
+	@FindBy(xpath = "//*[@id=\"prioritysort\"]/div/mat-form-field")
+	public WebElement priorityFilter;
 }

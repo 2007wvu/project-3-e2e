@@ -24,7 +24,7 @@ import dev.cuny.pages.ViewBugsPage;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources", glue = "dev.cuny.steps")
+@CucumberOptions(features = "src/test/resources", glue = "dev.cuny.steps", tags= {"@UserStory11"})
 public class Runner {
 
 	public static WebDriver driver;
@@ -47,7 +47,7 @@ public class Runner {
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-    driver.manage().window().maximize();
+		driver.manage().window().maximize();
   
 		loginPage = new LoginPage(driver);
 		mainPage = new MainPage(driver);

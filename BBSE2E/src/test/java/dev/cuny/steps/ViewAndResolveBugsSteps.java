@@ -39,7 +39,6 @@ public class ViewAndResolveBugsSteps {
 
 	@Then("^The application's bugs are not shown$")
 	public void the_application_s_bugs_are_not_shown() throws Throwable {
-		Thread.sleep(1000);
 		try {
 			Assert.assertFalse(mainPage.bugReportLink.isDisplayed());
 		} catch(NoSuchElementException e) {
@@ -49,13 +48,11 @@ public class ViewAndResolveBugsSteps {
 	
 	@When("^Client clicks on a bug link$")
 	public void client_clicks_on_a_bug_link() throws Throwable {
-		Thread.sleep(1000);
 	    mainPage.bugReportLink.click();
 	}
 
 	@Then("^The Bug's page is shown$")
 	public void the_Bug_s_page_is_shown() throws Throwable {
-		Thread.sleep(1000);
 	    Assert.assertTrue(bugReportPage.bugReportTitle.isDisplayed());
 	}
 
@@ -88,12 +85,12 @@ public class ViewAndResolveBugsSteps {
 
 	@Then("^The title input is cleared$")
 	public void the_title_input_is_cleared() throws Throwable {
-	    Assert.assertEquals(bugReportPage.solutionTitle.getText(),"");
+	    Assert.assertEquals("", bugReportPage.solutionTitle.getText());
 	}
 
 	@Then("^The solution input is cleared$")
 	public void the_solution_input_is_cleared() throws Throwable {
-		Assert.assertEquals(bugReportPage.solutionDescription.getText()," ");
+		Assert.assertEquals(" ", bugReportPage.solutionDescription.getText());
 	}
 	
 	@When("^Client clicks on view bugs button$")
@@ -120,13 +117,14 @@ public class ViewAndResolveBugsSteps {
 	
 	@When("^Client clicks the mark as resolved button$")
 	public void client_clicks_the_mark_as_resolved_button() throws Throwable {
-		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		executor.executeScript("arguments[0].click();", bugReportPage.resolveBugButton);
+		bugReportPage.resolveBugButton.click();
 	}
 
 	@Then("^status should be set to resolved$")
 	public void status_should_be_set_to_resolved() throws Throwable {
-	    Assert.assertEquals(bugReportPage.bugStatus.getText(), "Resolved");
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.textToBePresentInElement(bugReportPage.bugStatus, "Resolved"));
+	    Assert.assertEquals("Resolved", bugReportPage.bugStatus.getText());
 	}
 	
 	@When("^Client clicks on the return to view bugs button$")
