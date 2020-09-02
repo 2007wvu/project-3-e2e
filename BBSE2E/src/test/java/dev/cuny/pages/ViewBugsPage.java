@@ -27,10 +27,7 @@ public class ViewBugsPage {
 	public WebElement inspectButton;
 
 	@FindBy(id="viewBugs")
-	public WebElement viewBugsTab;
-	
-	//@FindBy(id="mat-tab-label-1-2")
-	//public WebElement unresolvedBugs;
+	public WebElement viewBugsTab;	
 	
 	@FindBy(id="inspectButton22")
 	public WebElement inspectButton22;
@@ -43,18 +40,6 @@ public class ViewBugsPage {
 	
 	@FindBy(id="solutStat")
 	public WebElement solutStat;
-	
-//	@FindBy(id = "inspectButton67")
-//	public WebElement inspectButtonRequested;
-//	
-//	@FindBy(id = "inspectButton31")
-//	public WebElement inspectButtonUnresolved;
-//	
-//	@FindBy(id = "inspectButton1")
-//	public WebElement inspectButtonResolved;
-//	
-//	@FindBy(id = "bugReport31")
-//	public WebElement bugReportTitle;
 	
 	@FindBy(id = "txtSolTitle")
 	public WebElement solutionTitle;
@@ -77,14 +62,16 @@ public class ViewBugsPage {
 	@FindBy (id = "return-to-view-bugs")
 	public WebElement returnToViewBugsButton;
 	
-	@FindBy(id = "mat-tab-label-0-0")
-	public WebElement resolvedBugsTab;
-	
-	@FindBy(id = "mat-tab-label-0-1")
-	public WebElement unresolvedBugsTab;
-	
-	@FindBy(id = "mat-tab-label-0-2")
-	public WebElement requestedBugsTab;
+//	@FindBy(id = "mat-tab-label-0-0")
+//	public WebElement resolvedBugsTab;
+//	
+//	@FindBy(id = "mat-tab-label-0-1")
+//	public WebElement unresolvedBugsTab;
+//	
+////	@FindBy(id = "mat-tab-label-0-2")
+////	public WebElement requestedBugsTab;
+//	@FindBy(xpath ="//*[contains(@id, '-2')]")
+//	public WebElement requestedBugsTab;
 	
 	@FindBy(id = "resolvedBugsTable")
 	public WebElement resolvedBugsTable;
