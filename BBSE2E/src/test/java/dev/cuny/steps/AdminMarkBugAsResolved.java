@@ -2,6 +2,7 @@ package dev.cuny.steps;
 
 import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -32,6 +33,9 @@ public class AdminMarkBugAsResolved {
 
 	@When("^Admin clicks the inspect button$")
 	public void admin_clicks_the_inspect_button() throws Throwable {
+		
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.elementToBeClickable(viewBugsPage.inspectButton22));
 		viewBugsPage.inspectButton22.click();
 	}
 
@@ -42,14 +46,13 @@ public class AdminMarkBugAsResolved {
 
 	@Given("^Admin is on the view bugs tab$")
 	public void admin_is_on_the_view_bugs_tab() throws Throwable {
-		String currentURL =  driver.getCurrentUrl();
-		System.out.println(currentURL);
+		Assert.assertEquals("http://localhost:4200/bugs", driver.getCurrentUrl());
 	}
 
 	@When("^Admin scroll down$")
 	public void admin_scroll_down() throws Throwable {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,650)", "");
+		js.executeScript("scroll(0, 650);");
 	}
 
 	@Then("^Admin is able to see all Solutions for this bug$")
@@ -57,18 +60,28 @@ public class AdminMarkBugAsResolved {
 	   Assert.assertTrue(viewBugsPage.postedSolutionsTitle.isDisplayed());
 	}
 	
-	@When("^Admin clicks solution$")
-	public void admin_clicks_solution() throws Throwable {
+	@When("^Admin clicks solution six$")
+	public void admin_clicks_solution_six() throws Throwable {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
-		wait.until(ExpectedConditions.elementToBeClickable(viewBugsPage.solution10));
-		viewBugsPage.solution10.click();
-		viewBugsPage.solution10.click();
+		wait.until(ExpectedConditions.elementToBeClickable(viewBugsPage.solution6));
+		viewBugsPage.solution6.click();
 	}
+	
+	@When("^Admin clicks solution four$")
+	public void admin_clicks_solution_four() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.elementToBeClickable(viewBugsPage.solution6));
+		viewBugsPage.solution6.click();
+	}
+	
+
 
 	@When("^Admin change the status to rejected$")
 	public void admin_change_the_status_to_rejected() throws Throwable {
-		Thread.sleep(5000);
+		Thread.sleep(2000);
+		//viewBugsPage.solutStat.sendKeys(Keys.TAB);
 		viewBugsPage.solutStat.sendKeys("Rejected");
+		
 		
 	}
 
@@ -79,6 +92,10 @@ public class AdminMarkBugAsResolved {
 
 	@When("^Admin change the status to accepted$")
 	public void admin_change_the_status_to_accepted() throws Throwable {
+		Thread.sleep(2000);
+		//viewBugsPage.solutStat.sendKeys(Keys.TAB);
 		viewBugsPage.solutStat.sendKeys("Accepted");
+	
+	
 	}
 }
