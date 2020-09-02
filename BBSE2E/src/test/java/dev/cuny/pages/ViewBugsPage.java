@@ -35,8 +35,11 @@ public class ViewBugsPage {
 	@FindBy(id="postedSolutionsTitle")
 	public WebElement postedSolutionsTitle;
 	
-	@FindBy(id="solution10")
-	public WebElement solution10;
+	@FindBy(id="solution2")
+	public WebElement solution6;
+	
+	@FindBy(id="solution4")
+	public WebElement solution4;
 	
 	@FindBy(id="solutStat")
 	public WebElement solutStat;
@@ -67,6 +70,11 @@ public class ViewBugsPage {
 	
 	@FindBy(id = "unresolvedBugsTable")
 	public WebElement unresolvedBugsTable;
+	
+	@FindBy(id = "solution2stat")
+	public WebElement solution2stat;
+	
+	
 
 	@FindBy(xpath = "//*[@id=\"resolvedBugsTable\"]/div[2]/table/thead/tr/th[1]/div/button")
 	public WebElement titleSortButton;

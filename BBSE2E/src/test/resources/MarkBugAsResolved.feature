@@ -29,7 +29,7 @@ Feature: As an Admin, I want to mark a bug as resolved, so that I can update the
 		Then Admin is on to the Bug Report Details page
 		When Admin scroll down
 		Then Admin is able to see all Solutions for this bug
-		When Admin clicks solution
+		When Admin clicks solution four
 		When Admin change the status to rejected
 		Then Solution status is changed
 	
@@ -43,7 +43,7 @@ Feature: As an Admin, I want to mark a bug as resolved, so that I can update the
 		Then Admin is on to the Bug Report Details page
 		When Admin scroll down
 		Then Admin is able to see all Solutions for this bug
-		When Admin clicks solution
+		When Admin clicks solution six
 		When Admin change the status to accepted
 		Then Solution status is changed 
 
