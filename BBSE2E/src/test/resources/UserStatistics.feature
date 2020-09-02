@@ -11,15 +11,7 @@ Feature: As a Client, I want to see various statistics, so that I can view leade
 	Scenario: As a Client, I want to view the leaderboard to see the top devs and their points by rank
 		Given Client is on the main page
 		Then Leaderboard is displayed 
-			
-	@UserStory6.2
-	Scenario: As a Client, I want to view my dev page to see my solution history, bug reports, & points
-		Given Client is on the main page
-		When Client clicks the profile tab
-		Then Client is redirected to their profile page
-		Then Solutions are displayed
-		Then Bug reports are displayed
-		Then Client points are displayed
+
 		
 	@UserStory6.3
 	Scenario: As a Client, I want to view my profile page to see my solution history, bug reports, & points	

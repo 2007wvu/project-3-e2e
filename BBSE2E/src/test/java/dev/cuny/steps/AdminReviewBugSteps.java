@@ -2,7 +2,9 @@ package dev.cuny.steps;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -52,6 +54,8 @@ public class AdminReviewBugSteps {
 
 	@Then("^priority should be \"([^\"]*)\"$")
 	public void priority_should_be(String arg1) throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.textToBePresentInElement(bugReportPage.prioritySelect, arg1));
 		Select priority = new Select(bugReportPage.prioritySelect);
 		Assert.assertEquals(arg1, priority.getFirstSelectedOption().getText());
 	}
