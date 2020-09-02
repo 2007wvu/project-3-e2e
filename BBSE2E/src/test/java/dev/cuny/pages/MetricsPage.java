@@ -20,7 +20,7 @@ public class MetricsPage {
 	@FindBy(linkText = "Applications")
 	public WebElement applicationButton;
 	
-	@FindBy(xpath = "/html/body/app-root/div/app-metrics-page/div/div/div[1]/div/div[3]/a")
+	@FindBy(id = "applications-tab")
 	public WebElement applicationSideButton;
 	
 	@FindBy(id = "average-time")

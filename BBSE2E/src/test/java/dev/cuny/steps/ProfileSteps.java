@@ -78,7 +78,7 @@ public class ProfileSteps {
 	public void an_alert_should_appear() throws Throwable {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.alertIsPresent());
-	    Assert.assertEquals(driver.switchTo().alert().getText(), "password successfully updated");
+	    Assert.assertEquals("password successfully updated", driver.switchTo().alert().getText());
 	    driver.switchTo().alert().accept();
 	}
 	
