@@ -24,7 +24,7 @@ import dev.cuny.pages.ViewBugsPage;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources", glue = "dev.cuny.steps")
+@CucumberOptions(features = "src/test/resources", glue = "dev.cuny.steps", tags= {"@UserStory11"})
 public class Runner {
 
 	public static WebDriver driver;
