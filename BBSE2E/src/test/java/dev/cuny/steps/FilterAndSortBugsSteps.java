@@ -29,20 +29,23 @@ public class FilterAndSortBugsSteps {
 	}
 	@When("^Client clicks on the requested bugs tab$")
 	public void client_clicks_on_the_requested_bugs_tab() throws Throwable {
-		Thread.sleep(1000);
 	    WebElement requestedBugsTab = driver.findElement(By.xpath("//div[substring(@id,string-length(@id) -string-length('-2') +1) = '-2']"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(requestedBugsTab));
 	    requestedBugsTab.click();
 	}
 	@When("^Client clicks on the unresolved bugs tab$")
 	public void client_clicks_on_the_unresolved_bugs_tab() throws Throwable {
-		Thread.sleep(1000);
 	    WebElement unresolvedBugsTab = driver.findElement(By.xpath("//div[substring(@id,string-length(@id) -string-length('-1') +1) = '-1']"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(unresolvedBugsTab));
 	    unresolvedBugsTab.click();
 	}	
 	@When("^Client clicks on the resolved bugs tab$")
 	public void client_clicks_on_the_resolved_bugs_tab() throws Throwable {
-		Thread.sleep(1000);
 	    WebElement resolvedBugsTab = driver.findElement(By.xpath("//div[substring(@id,string-length(@id) -string-length('-0') +1) = '-0']"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(resolvedBugsTab));
 	    resolvedBugsTab.click();
 	}
 	@Then("^Requested bugs table is displayed$")
@@ -54,22 +57,25 @@ public class FilterAndSortBugsSteps {
 	
 	@When("^Client clicks inspect button on a requested bug$")
 	public void client_clicks_inspect_button_on_a_requested_bug() throws Throwable {
-	    Thread.sleep(2000);
-	    WebElement inspectButtonRequested = driver.findElement(By.id("inspectButton"));
+	    WebElement inspectButtonRequested = driver.findElement(By.id("inspectButton68"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(inspectButtonRequested));
 	    inspectButtonRequested.click();
 	}
 
 	@When("^Client clicks inspect button on a unresolved bug$")
 	public void client_clicks_inspect_button_on_a_unresolved_bug() throws Throwable {
-		Thread.sleep(2000);
-	    WebElement inspectButtonUnresolved = driver.findElement(By.id("inspectButton"));
+		WebElement inspectButtonUnresolved = driver.findElement(By.id("inspectButton31"));
+		WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(inspectButtonUnresolved));
 	    inspectButtonUnresolved.click();
 	}
 
 	@When("^Client clicks inspect button on a resolved bug$")
 	public void client_clicks_inspect_button_on_a_resolved_bug() throws Throwable {
-		Thread.sleep(2000);
-		WebElement inspectButtonResolved = driver.findElement(By.id("inspectButton"));
+		WebElement inspectButtonResolved = driver.findElement(By.id("inspectButton1"));
+		WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(inspectButtonResolved));
 	    inspectButtonResolved.click();
 	}
 	
@@ -100,8 +106,9 @@ public class FilterAndSortBugsSteps {
 	
 	@When("^Client types location into search bar$")
 	public void client_types_location_into_search_bar() throws Throwable {
-		Thread.sleep(1000);
 	    WebElement search = driver.findElement(By.xpath("//input[@ng-reflect-placeholder='Search Bugs']"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(search));
 	    search.sendKeys("line 342");
 	}
 	
@@ -113,8 +120,9 @@ public class FilterAndSortBugsSteps {
 
 	@Then("^Only bugs from that location should be visible$")
 	public void only_bugs_from_that_location_should_be_visible() throws Throwable {
-	    Thread.sleep(1000);
 	    WebElement line = driver.findElement(By.tagName("app-admin-bugs-table"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(line));
 		Assert.assertTrue(line.getText().contains("Line 342"));
 	}
 	
@@ -127,15 +135,17 @@ public class FilterAndSortBugsSteps {
 
 	@Then("^Bugs should be sorted alphabetically by title$")
 	public void bugs_should_be_sorted_alphabetically_by_title() throws Throwable {
-	    Thread.sleep(1000);
 	    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[1]"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(title));
 	    Assert.assertTrue(title.getText().equals("DataBuffer doesn't write to file called: The flood"));
 	}
 	
 	@Then("^Bugs should be sorted reverse alphabetically by title$")
 	public void bugs_should_be_sorted_reverse_alphabetically_by_title() throws Throwable {
-	    Thread.sleep(1000);
 	    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[1]"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(title));
 	    Assert.assertTrue(title.getText().equals("When using the code from Bioshock it causes my compter"));
 	}
 	
@@ -148,15 +158,17 @@ public class FilterAndSortBugsSteps {
 
 	@Then("^Bugs should be sorted by date$")
 	public void bugs_should_be_sorted_by_date() throws Throwable {
-	    Thread.sleep(1000);
 	    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[6]"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(title));
 	    Assert.assertTrue(title.getText().equals("8/26/20, 8:00 PM"));
 	}
 
 	@Then("^Bugs should be sorted reverse by date$")
 	public void bugs_should_be_sorted_reverse_by_date() throws Throwable {
-	    Thread.sleep(1000);
 	    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[6]"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(title));
 	    Assert.assertTrue(title.getText().equals("5/2/20, 8:00 PM"));
 	}
 	
@@ -169,15 +181,17 @@ public class FilterAndSortBugsSteps {
 
 	@Then("^Bugs should be sorted by severity$")
 	public void bugs_should_be_sorted_by_severity() throws Throwable {
-		Thread.sleep(1000);
 	    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[4]"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(title));
 	    Assert.assertTrue(title.getText().equals("High"));
 	}
 
 	@Then("^Bugs should be sorted reverse by severity$")
 	public void bugs_should_be_sorted_reverse_by_severity() throws Throwable {
-		Thread.sleep(1000);
 	    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[4]"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(title));
 	    Assert.assertTrue(title.getText().equals("Low"));
 	}
 	
@@ -190,15 +204,17 @@ public class FilterAndSortBugsSteps {
 
 	@Then("^Bugs should be sorted by priority$")
 	public void bugs_should_be_sorted_by_priority() throws Throwable {
-		Thread.sleep(1000);
 	    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[5]"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(title));
 	    Assert.assertTrue(title.getText().equals("High"));
 	}
 
 	@Then("^Bugs should be sorted reverse by priority$")
 	public void bugs_should_be_sorted_reverse_by_priority() throws Throwable {
-		Thread.sleep(1000);
 	    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[5]"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(title));
 	    Assert.assertTrue(title.getText().equals("Low"));
 	}
 
@@ -211,15 +227,17 @@ public class FilterAndSortBugsSteps {
 
 	@Then("^Bugs should be sorted by application$")
 	public void bugs_should_be_sorted_by_application() throws Throwable {
-		Thread.sleep(1000);
 	    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[2]"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(title));
 	    Assert.assertTrue(title.getText().equals("Bug Bounty System"));
 	}
 
 	@Then("^Bugs should be sorted reverse by application$")
 	public void bugs_should_be_sorted_reverse_by_application() throws Throwable {
-		Thread.sleep(1000);
 	    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[2]"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(title));
 	    Assert.assertTrue(title.getText().equals("Pizza Ordering Application"));
 	}
 	
@@ -232,15 +250,17 @@ public class FilterAndSortBugsSteps {
 
 	@Then("^Bugs should be sorted by location$")
 	public void bugs_should_be_sorted_by_location() throws Throwable {
-		Thread.sleep(1000);
 	    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[3]"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(title));
 	    Assert.assertTrue(title.getText().equals("I have no Idea"));
 	}
 
 	@Then("^Bugs should be sorted reverse by location$")
 	public void bugs_should_be_sorted_reverse_by_location() throws Throwable {
-		Thread.sleep(1000);
 	    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[3]"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(title));
 	    Assert.assertTrue(title.getText().equals("Swift encoder"));
 	}
 
@@ -253,15 +273,17 @@ public class FilterAndSortBugsSteps {
 
 	@Then("^Bugs should be sorted by developer$")
 	public void bugs_should_be_sorted_by_developer() throws Throwable {
-		Thread.sleep(1000);
 	    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[7]"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(title));
 	    Assert.assertTrue(title.getText().equals("AlwaysDeugging"));
 	}
 
 	@Then("^Bugs should be sorted reverse by developer$")
 	public void bugs_should_be_sorted_reverse_by_developer() throws Throwable {
-		Thread.sleep(1000);
 	    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[7]"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(title));
 	    Assert.assertTrue(title.getText().equals("user1"));
 	}
 	
@@ -274,15 +296,15 @@ public class FilterAndSortBugsSteps {
 
 	@When("^Client clicks an application$")
 	public void client_clicks_an_application() throws Throwable {
-		Thread.sleep(1000);
 	    List<WebElement> field = driver.findElements(By.className("mat-option-text"));
 	    field.get(1).click();
 	}
 
 	@Then("^Bugs of that application should be shown$")
 	public void bugs_of_that_application_should_be_shown() throws Throwable {
-		Thread.sleep(1000);
 	    WebElement app = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[2]"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(app));
 	    Assert.assertTrue(app.getText().equals("Bug Bounty System"));
 	}
 	
@@ -309,8 +331,9 @@ public class FilterAndSortBugsSteps {
 
 	@Then("^Bugs of that severity should be shown$")
 	public void bugs_of_that_severity_should_be_shown() throws Throwable {
-		Thread.sleep(1000);
 	    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[4]"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(title));
 	    Assert.assertTrue(title.getText().equals("Low"));
 	}
 
@@ -330,8 +353,9 @@ public class FilterAndSortBugsSteps {
 
 	@Then("^Bugs of that priority should be shown$")
 	public void bugs_of_that_priority_should_be_shown() throws Throwable {
-		Thread.sleep(1000);
 	    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[5]"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOf(title));
 	    Assert.assertTrue(title.getText().equals("Low"));
 	}
 }
