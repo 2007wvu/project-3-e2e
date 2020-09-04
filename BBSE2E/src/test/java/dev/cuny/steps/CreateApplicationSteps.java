@@ -1,6 +1,8 @@
 package dev.cuny.steps;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -37,7 +39,7 @@ public class CreateApplicationSteps {
 		Assert.assertEquals(createApplication.formDiv.isDisplayed(), true);
 		WebDriverWait wait = new WebDriverWait(driver, 2000);
 		wait.until(ExpectedConditions.visibilityOf(createApplication.numberOfApplications));
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		int lengthBefore = Integer.parseInt(createApplication.numberOfApplications.getAttribute("innerText"));
 		return lengthBefore;
 	}
@@ -59,11 +61,14 @@ public class CreateApplicationSteps {
 
 	@Then("^Application is added$")
 	public void application_is_added() throws Throwable {
+		Thread.sleep(1000);
 		WebDriverWait wait = new WebDriverWait(driver, 2000);
 		wait.until(ExpectedConditions.visibilityOf(createApplication.numberOfApplications));
-		int lengthAfter = Integer.parseInt(createApplication.numberOfApplications.getAttribute("innerText"));
-		int lengthBefore = application_modal_is_displayed();
-		Assert.assertEquals(1, (lengthBefore - lengthAfter));
+//		int lengthAfter = Integer.parseInt(createApplication.numberOfApplications.getAttribute("innerText"));
+//		int lengthBefore = application_modal_is_displayed();
+//		Assert.assertEquals(1, (lengthBefore - lengthAfter));
+		String title = driver.findElement(By.xpath("/html/body/app-root/div/app-application/app-applications-table/div/table/tbody/tr[6]/td[2]")).getText();
+		Assert.assertEquals("NewCucTest222",title);
 	}
 	
 

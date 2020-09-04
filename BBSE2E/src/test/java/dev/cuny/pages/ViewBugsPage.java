@@ -29,16 +29,16 @@ public class ViewBugsPage {
 	@FindBy(id="viewBugs")
 	public WebElement viewBugsTab;	
 	
-	@FindBy(id="inspectButton22")
-	public WebElement inspectButton22;
+	@FindBy(id="inspectButton1")
+	public WebElement inspectButton1;
 	
 	@FindBy(id="postedSolutionsTitle")
 	public WebElement postedSolutionsTitle;
 	
-	@FindBy(id="solution2")
+	@FindBy(id="solution49")
 	public WebElement solution6;
 	
-	@FindBy(id="solution4")
+	@FindBy(id="solution49")
 	public WebElement solution4;
 	
 	@FindBy(id="solutStat")

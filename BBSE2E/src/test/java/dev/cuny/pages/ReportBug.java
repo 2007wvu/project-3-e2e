@@ -40,7 +40,7 @@ public class ReportBug {
 	@FindBy(id = "BugSubmit")
 	public WebElement BugSubmit;
 
-	@FindBy(id = "BugTitleReport")
+	@FindBy(id = "bugTitleReport")
 	public WebElement BugTitleReport;
 
 }
