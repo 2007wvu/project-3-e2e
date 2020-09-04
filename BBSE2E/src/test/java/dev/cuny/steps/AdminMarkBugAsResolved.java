@@ -1,9 +1,11 @@
 package dev.cuny.steps;
 
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -34,14 +36,17 @@ public class AdminMarkBugAsResolved {
 	@When("^Admin clicks the inspect button$")
 	public void admin_clicks_the_inspect_button() throws Throwable {
 		
-		WebDriverWait wait = new WebDriverWait(driver, 20);
-		wait.until(ExpectedConditions.elementToBeClickable(viewBugsPage.inspectButton22));
-		viewBugsPage.inspectButton22.click();
+		Thread.sleep(1000);
+		WebElement inspectButtonUnresolved = driver.findElement(By.linkText("Inspect"));
+		inspectButtonUnresolved.click();
+		//wait.until(ExpectedConditions.elementToBeClickable(viewBugsPage.inspectButton22));
+		//wait.until(ExpectedConditions.elementToBeClickable(viewBugsPage.inspectButton22));
+		//viewBugsPage.inspectButton22.click();
 	}
 
 	@Then("^Admin is on to the Bug Report Details page$")
 	public void admin_is_on_to_the_Bug_Report_Details_page() throws Throwable {
-		Assert.assertEquals("Bug Report #", bugReportPage.bugReportTitle.getText());
+		Assert.assertEquals("Bug Report #61", bugReportPage.bugReportTitle.getText());
 	}
 
 	@Given("^Admin is on the view bugs tab$")

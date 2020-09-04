@@ -57,25 +57,22 @@ public class FilterAndSortBugsSteps {
 	
 	@When("^Client clicks inspect button on a requested bug$")
 	public void client_clicks_inspect_button_on_a_requested_bug() throws Throwable {
-	    WebElement inspectButtonRequested = driver.findElement(By.id("inspectButton68"));
-	    WebDriverWait wait = new WebDriverWait(driver, 2);
-	    wait.until(ExpectedConditions.visibilityOf(inspectButtonRequested));
+		Thread.sleep(2000);
+	    WebElement inspectButtonRequested = driver.findElement(By.id("inspectButton70"));
 	    inspectButtonRequested.click();
 	}
 
 	@When("^Client clicks inspect button on a unresolved bug$")
 	public void client_clicks_inspect_button_on_a_unresolved_bug() throws Throwable {
-		WebElement inspectButtonUnresolved = driver.findElement(By.id("inspectButton31"));
-		WebDriverWait wait = new WebDriverWait(driver, 2);
-	    wait.until(ExpectedConditions.visibilityOf(inspectButtonUnresolved));
+		Thread.sleep(2000);
+		WebElement inspectButtonUnresolved = driver.findElement(By.linkText("Inspect"));
 	    inspectButtonUnresolved.click();
 	}
 
 	@When("^Client clicks inspect button on a resolved bug$")
 	public void client_clicks_inspect_button_on_a_resolved_bug() throws Throwable {
+		Thread.sleep(2000);
 		WebElement inspectButtonResolved = driver.findElement(By.id("inspectButton1"));
-		WebDriverWait wait = new WebDriverWait(driver, 2);
-	    wait.until(ExpectedConditions.visibilityOf(inspectButtonResolved));
 	    inspectButtonResolved.click();
 	}
 	

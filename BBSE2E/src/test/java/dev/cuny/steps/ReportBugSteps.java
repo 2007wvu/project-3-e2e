@@ -87,9 +87,13 @@ public class ReportBugSteps {
 	@Then("^Client is on the Bug Report View$")
 	public void client_is_on_the_Bug_Report_View() throws Throwable {
 		
-		String reportedBugTitle = client_clicks_the_submit_bug_button();
-				
-		Assert.assertEquals(reportBug.BugTitleReport.getText(), reportedBugTitle);
+		//String reportedBugTitle = client_clicks_the_submit_bug_button();
+		
+		//Assert.assertEquals(reportBug.bugTitle.getText(), reportedBugTitle);
+		
+		String bugTitle = reportBug.bugTitle.getAttribute("innerText");
+		
+		Assert.assertEquals(reportBug.bugTitle.getText(), bugTitle);
 	}
 
 
