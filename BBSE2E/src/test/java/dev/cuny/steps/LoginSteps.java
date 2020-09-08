@@ -56,7 +56,6 @@ public class LoginSteps {
 	    Assert.assertTrue(loginPage.loginError.isDisplayed());
 	}
 	
-
 	@Given("^Admin is on the Login page$")
 	public void admin_is_on_the_Login_page() throws Throwable {
 		driver.get("http://localhost:4200");
@@ -86,10 +85,8 @@ public class LoginSteps {
 	    wait.until(ExpectedConditions.visibilityOf(mainPage.mainBanner));
 
 	    Assert.assertTrue(mainPage.mainBanner.isDisplayed());
-
 	}
 	
-
 	@When("^Client clicks the log out button$")
 	public void client_clicks_the_log_out_button() throws Throwable {
 	    mainPage.logoutButton.click();

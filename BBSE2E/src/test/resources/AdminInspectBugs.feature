@@ -11,7 +11,7 @@ Feature: Admin views and inspects submitted bugs
 		
 	Scenario: Admin approves bug report 
 		When Client clicks on requested bugs tab
-		When Client clicks inspect button
+		When Client clicks on inspect button
 		Then The Bug's page is shown
 		When Client updates priority with "Low"
 		When Client updates severity with "Low"
@@ -24,7 +24,7 @@ Feature: Admin views and inspects submitted bugs
 		
 	Scenario: Admin rejects bug report
 		When Client clicks on requested bugs tab
-		When Client clicks inspect button
+		When Client clicks on inspect button
 		Then The Bug's page is shown
 		When Client clicks on the reject button
 		Then status should be set to Denied

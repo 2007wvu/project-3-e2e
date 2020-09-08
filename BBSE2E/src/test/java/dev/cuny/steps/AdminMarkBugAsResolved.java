@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -35,13 +36,15 @@ public class AdminMarkBugAsResolved {
 
 	@When("^Admin clicks the inspect button$")
 	public void admin_clicks_the_inspect_button() throws Throwable {
-		
-		Thread.sleep(1000);
-		WebElement inspectButtonUnresolved = driver.findElement(By.linkText("Inspect"));
-		inspectButtonUnresolved.click();
-		//wait.until(ExpectedConditions.elementToBeClickable(viewBugsPage.inspectButton22));
-		//wait.until(ExpectedConditions.elementToBeClickable(viewBugsPage.inspectButton22));
-		//viewBugsPage.inspectButton22.click();
+		WebDriverWait wait = new WebDriverWait(driver, 1);
+		WebElement field = driver.findElement(By.linkText("Inspect"));
+	    try {
+			wait.until(ExpectedConditions.stalenessOf(field));
+		    field  = driver.findElement(By.linkText("Inspect"));
+		    field.click();
+	    } catch (TimeoutException e) {
+		    field.click();
+	    }	 
 	}
 
 	@Then("^Admin is on to the Bug Report Details page$")
@@ -79,8 +82,6 @@ public class AdminMarkBugAsResolved {
 		viewBugsPage.solution6.click();
 	}
 	
-
-
 	@When("^Admin change the status to rejected$")
 	public void admin_change_the_status_to_rejected() throws Throwable {
 		viewBugsPage.solutStat.sendKeys("Rejected");
@@ -93,10 +94,8 @@ public class AdminMarkBugAsResolved {
 
 	@When("^Admin change the status to accepted$")
 	public void admin_change_the_status_to_accepted() throws Throwable {
-		Thread.sleep(2000);
-		//viewBugsPage.solutStat.sendKeys(Keys.TAB);
+		WebDriverWait wait = new WebDriverWait(driver, 2);
+		wait.until(ExpectedConditions.visibilityOf(viewBugsPage.solutStat));
 		viewBugsPage.solutStat.sendKeys("Accepted");
-	
-	
 	}
 }

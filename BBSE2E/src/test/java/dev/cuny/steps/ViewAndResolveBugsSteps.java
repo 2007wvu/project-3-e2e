@@ -107,13 +107,6 @@ public class ViewAndResolveBugsSteps {
 	public void client_clicks_on_unresolved_bugs_button() throws Throwable {
 	    viewBugsPage.unresolvedBugsButton.click();
 	}
-
-	@Then("^Client clicks inspect button$")
-	public void client_clicks_inspect_button() throws Throwable {
-		Thread.sleep(1000);
-		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		executor.executeScript("arguments[0].click();", viewBugsPage.inspectButton);
-	}
 	
 	@When("^Client clicks the mark as resolved button$")
 	public void client_clicks_the_mark_as_resolved_button() throws Throwable {

@@ -55,16 +55,7 @@ public class AdminViewMetrics {
 	@When("^Admin clicks the applications button$")
 	public void admin_clicks_the_applications_button() throws Throwable {
 		metricPage.applicationSideButton.click();
-		System.out.println("canvas size" + metricPage.applicationGraph.getSize());
-		Thread.sleep(1000);
 	}
-
-
-//	@Then("^Admin sees metrics on the applications$")
-//	public void admin_sees_metrics_on_the_applications() throws Throwable {
-//		Dimension size = new Dimension(1292,400);
-//		Assert.assertEquals(metricPage.applicationGraph.getSize(), size);
-//	}
 	
 	@Then("^Admin sees metrics on the applications$")
 	public void admin_sees_metrics_on_the_applications() throws Throwable {
