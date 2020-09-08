@@ -69,6 +69,7 @@ public class AdminViewMetrics {
 	@Then("^Admin sees metrics on the applications$")
 	public void admin_sees_metrics_on_the_applications() throws Throwable {
 		Dimension size = new Dimension(0, 0);
-		Assert.assertTrue(!metricPage.applicationGraph.getSize().equals(size));
+		Assert.assertNotSame(0, metricPage.applicationGraph.getSize().getHeight());
+		Assert.assertNotSame(0, metricPage.applicationGraph.getSize().getWidth());
 	}
 }
