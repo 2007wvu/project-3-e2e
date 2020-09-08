@@ -1,5 +1,6 @@
 package dev.cuny.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,6 +26,10 @@ public class ViewBugsPage {
 	
 	@FindBy(linkText = "Inspect")
 	public WebElement inspectButton;
+	
+	public WebElement getInspectButton() {
+		return driver.findElement(By.linkText("Inspect"));
+	}
 
 	@FindBy(id="viewBugs")
 	public WebElement viewBugsTab;	
