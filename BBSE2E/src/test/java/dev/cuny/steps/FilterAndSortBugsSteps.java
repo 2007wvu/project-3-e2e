@@ -106,17 +106,17 @@ public class FilterAndSortBugsSteps {
 		    WebElement app = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[2]"));
 		    WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(app));
-		    Assert.assertTrue(app.getText().equals("Bug Bounty System"));
+		    Assert.assertEquals("Bug Bounty System", app.getText());
 	    }else if(arg1.equals("severity")) {
 		    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[4]"));
 		    WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(title));
-		    Assert.assertTrue(title.getText().equals("Low"));
+		    Assert.assertEquals("Low", title.getText());
 	    }else if(arg1.equals("priority")) {
 		    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[5]"));
 		    WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(title));
-		    Assert.assertTrue(title.getText().equals("Low"));
+		    Assert.assertEquals("Low", title.getText());
 	    }
 	}
 	
@@ -190,37 +190,37 @@ public class FilterAndSortBugsSteps {
 		    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[1]"));
 		    WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(title));
-		    Assert.assertTrue(title.getText().equals("DataBuffer doesn't write to file called: The flood"));
+		    Assert.assertEquals("DataBuffer doesn't write to file called: The flood", title.getText());
 	    }else if(arg1.equals("location")) {
 		    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[3]"));
 		    WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(title));
-		    Assert.assertTrue(title.getText().equals("I have no Idea"));
+		    Assert.assertEquals("I have no Idea", title.getText());
 	    }else if(arg1.equals("severity")) {
 		    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[4]"));
 		    WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(title));
-		    Assert.assertTrue(title.getText().equals("High"));
+		    Assert.assertEquals("High", title.getText());
 	    }else if(arg1.equals("priority")) {
 		    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[5]"));
 		    WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(title));
-		    Assert.assertTrue(title.getText().equals("High"));
+		    Assert.assertEquals("High", title.getText());
 	    }else if(arg1.equals("date")) {
 	    	WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[6]"));
 		    WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(title));
-		    Assert.assertTrue(title.getText().equals("8/26/20, 8:00 PM"));
+		    Assert.assertEquals("8/26/20, 8:00 PM", title.getText());
 	    }else if(arg1.equals("developer")) {
 		    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[7]"));
 		    WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(title));
-		    Assert.assertTrue(title.getText().equals("AlwaysDeugging"));
+		    Assert.assertEquals("AlwaysDeugging", title.getText());
 	    }else if(arg1.equals("application")) {
 		    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[2]"));
 		    WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(title));
-		    Assert.assertTrue(title.getText().equals("Bug Bounty System"));
+		    Assert.assertEquals("Bug Bounty System", title.getText());
 	    }
 	}
 
@@ -230,34 +230,34 @@ public class FilterAndSortBugsSteps {
 		    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[1]"));
 		    WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(title));
-		    Assert.assertTrue(title.getText().equals("When using the code from Bioshock it causes my compter"));
+		    Assert.assertEquals("When using the code from Bioshock it causes my compter", title.getText());
 	    }else if(arg1.equals("location")) {
 	    	
 	    }else if(arg1.equals("severity")) {
 		    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[4]"));
 		    WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(title));
-		    Assert.assertTrue(title.getText().equals("Low"));
+		    Assert.assertEquals("Low", title.getText());
 	    }else if(arg1.equals("priority")) {
 		    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[5]"));
 		    WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(title));
-		    Assert.assertTrue(title.getText().equals("Low"));
+		    Assert.assertEquals("Low", title.getText());
 	    }else if(arg1.equals("date")) {
 		    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[6]"));
 		    WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(title));
-		    Assert.assertTrue(title.getText().equals("5/2/20, 8:00 PM"));
+		    Assert.assertEquals("5/2/20, 8:00 PM", title.getText());
 	    }else if(arg1.equals("developer")) {
 		    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[7]"));
 		    WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(title));
-		    Assert.assertTrue(title.getText().equals("user1"));
+		    Assert.assertEquals("user1", title.getText());
 	    }else if(arg1.equals("application")) {
 		    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[2]"));
 		    WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(title));
-		    Assert.assertTrue(title.getText().equals("Pizza Ordering Application"));
+		    Assert.assertEquals("Pizza Ordering Application", title.getText());
 	    }
 	}
 	

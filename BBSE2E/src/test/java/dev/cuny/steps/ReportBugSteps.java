@@ -30,7 +30,7 @@ public class ReportBugSteps {
 
 	@Then("^Client is on the on the Report New Bug page$")
 	public void client_is_on_the_on_the_Report_New_Bug_page() throws Throwable {
-		Assert.assertEquals(reportBug.newBugReport.getText(), "Bug Report #");
+		Assert.assertEquals("Bug Report #", reportBug.newBugReport.getText());
 	}
 
 	@When("^Client enters \"([^\"]*)\" for a bug title$")
