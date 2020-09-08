@@ -1,10 +1,10 @@
 package dev.cuny.steps;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -72,22 +72,29 @@ public class FilterAndSortBugsSteps {
 
 	@When("^Client clicks on inspect button$")
 	public void client_clicks_inspect_button_on_a_unresolved_bug() throws Throwable {
-		Thread.sleep(2000);
-	    viewBugsPage.getInspectButton().click();
+		WebDriverWait wait = new WebDriverWait(driver, 1);
+		WebElement field = driver.findElement(By.linkText("Inspect"));
+	    try {
+			wait.until(ExpectedConditions.stalenessOf(field));
+		    field  = driver.findElement(By.linkText("Inspect"));
+		    field.click();
+	    } catch (TimeoutException e) {
+		    field.click();
+	    }	    
 	}
 	
 	@When("^Client clicks \"([^\"]*)\" filter select$")
 	public void client_clicks_filter_select(String arg1) throws Throwable {
 		if(arg1.equals("application")) {
-			WebDriverWait wait = new WebDriverWait(driver, 1);
+			WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.applicationFilter));
 			viewBugsPage.applicationFilter.click();
 		}else if(arg1.equals("severity")){
-			WebDriverWait wait = new WebDriverWait(driver, 1);
+			WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.severityFilter));
 			viewBugsPage.severityFilter.click();
 		}else if(arg1.equals("priority")){
-			WebDriverWait wait = new WebDriverWait(driver, 1);
+			WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.priorityFilter));
 			viewBugsPage.priorityFilter.click();
 		}
@@ -95,9 +102,16 @@ public class FilterAndSortBugsSteps {
 
 	@When("^Client clicks an option$")
 	public void client_clicks_an_option() throws Throwable {
-		Thread.sleep(1000);
-	    List<WebElement> field = driver.findElements(By.className("mat-option-text"));
-	    field.get(1).click();
+	    
+		WebDriverWait wait = new WebDriverWait(driver, 1);
+		WebElement field = driver.findElements(By.className("mat-option-text")).get(1);
+	    try {
+			wait.until(ExpectedConditions.stalenessOf(field));
+		    field  = driver.findElements(By.className("mat-option-text")).get(1);
+		    field.click();
+	    } catch (TimeoutException e) {
+	    	field.click();
+	    }	
 	}
 
 	@Then("^Bugs of that \"([^\"]*)\" should be shown$")
@@ -158,27 +172,27 @@ public class FilterAndSortBugsSteps {
 	@When("^Client clicks on \"([^\"]*)\" sort button$")
 	public void client_clicks_on_sort_button(String arg1) throws Throwable {
 		if(arg1.equals("title")) {
-			WebDriverWait wait = new WebDriverWait(driver, 1);
+			WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.titleSortButton));
 			viewBugsPage.titleSortButton.click();
 	    }else if(arg1.equals("location")) {
-	    	WebDriverWait wait = new WebDriverWait(driver, 1);
+	    	WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.locationSortButton));
 			viewBugsPage.locationSortButton.click();
 	    }else if(arg1.equals("severity")) {
-	    	WebDriverWait wait = new WebDriverWait(driver, 1);
+	    	WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.severitySortButton));
 			viewBugsPage.severitySortButton.click();
 	    }else if(arg1.equals("priority")) {
-	    	WebDriverWait wait = new WebDriverWait(driver, 1);
+	    	WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.prioritySortButton));
 			viewBugsPage.prioritySortButton.click();
 	    }else if(arg1.equals("date")) {
-	    	WebDriverWait wait = new WebDriverWait(driver, 1);
+	    	WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.dateSortButton));
 			viewBugsPage.dateSortButton.click();
 	    }else if(arg1.equals("developer")) {
-	    	WebDriverWait wait = new WebDriverWait(driver, 1);
+	    	WebDriverWait wait = new WebDriverWait(driver, 2);
 		    wait.until(ExpectedConditions.visibilityOf(viewBugsPage.developerSortButton));
 			viewBugsPage.developerSortButton.click();
 	    }
@@ -266,8 +280,9 @@ public class FilterAndSortBugsSteps {
 	
 	@When("^Client clicks all$")
 	public void client_clicks_all() throws Throwable {
-		Thread.sleep(1000);
 	    List<WebElement> field = driver.findElements(By.className("mat-option-text"));
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.visibilityOfAllElements(field));
 	    field.get(0).click();
 	}
 }
