@@ -232,7 +232,10 @@ public class FilterAndSortBugsSteps {
 		    wait.until(ExpectedConditions.visibilityOf(title));
 		    Assert.assertEquals("When using the code from Bioshock it causes my compter", title.getText());
 	    }else if(arg1.equals("location")) {
-	    	
+		    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[3]"));
+		    WebDriverWait wait = new WebDriverWait(driver, 2);
+		    wait.until(ExpectedConditions.visibilityOf(title));
+		    Assert.assertEquals("Swift encoder", title.getText());
 	    }else if(arg1.equals("severity")) {
 		    WebElement title = driver.findElement(By.xpath("//*[@id=\"resolvedBugsTable\"]/div[2]/table/tbody/tr[1]/td[4]"));
 		    WebDriverWait wait = new WebDriverWait(driver, 2);
