@@ -12,7 +12,7 @@ Feature: Inspect and resolve bugs on view bugs page
 		When Client clicks on view bugs button
 		Then Client should be on view bugs page
 		When Client clicks on unresolved bugs button
-		When Client clicks inspect button
+		When Client clicks on inspect button
 		Then The Bug's page is shown
 		When Client clicks the mark as resolved button
 		Then status should be set to resolved

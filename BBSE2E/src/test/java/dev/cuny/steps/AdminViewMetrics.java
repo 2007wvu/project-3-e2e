@@ -55,8 +55,6 @@ public class AdminViewMetrics {
 	@When("^Admin clicks the applications button$")
 	public void admin_clicks_the_applications_button() throws Throwable {
 		metricPage.applicationSideButton.click();
-		System.out.println("canvas size" + metricPage.applicationGraph.getSize());
-		Thread.sleep(1000);
 	}
 
 

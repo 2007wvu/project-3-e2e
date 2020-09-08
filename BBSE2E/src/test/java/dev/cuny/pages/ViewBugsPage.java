@@ -30,12 +30,6 @@ public class ViewBugsPage {
 	
 	@FindBy(linkText = "Inspect")
 	public WebElement inspectButton;
-	
-	public WebElement getInspectButton() {
-	    WebElement field = driver.findElement(By.linkText("Inspect"));
-
-	    return field;
-	}
 
 	@FindBy(id="viewBugs")
 	public WebElement viewBugsTab;	
