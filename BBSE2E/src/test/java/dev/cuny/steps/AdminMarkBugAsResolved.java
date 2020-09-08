@@ -36,13 +36,6 @@ public class AdminMarkBugAsResolved {
 
 	@When("^Admin clicks the inspect button$")
 	public void admin_clicks_the_inspect_button() throws Throwable {
-//		Thread.sleep(1000);
-//		WebElement inspectButtonUnresolved = driver.findElement(By.linkText("Inspect"));
-//		inspectButtonUnresolved.click();
-		
-		//wait.until(ExpectedConditions.elementToBeClickable(viewBugsPage.inspectButton22));
-		//wait.until(ExpectedConditions.elementToBeClickable(viewBugsPage.inspectButton22));
-		//viewBugsPage.inspectButton22.click();
 		WebDriverWait wait = new WebDriverWait(driver, 1);
 		WebElement field = driver.findElement(By.linkText("Inspect"));
 	    try {
@@ -89,8 +82,6 @@ public class AdminMarkBugAsResolved {
 		viewBugsPage.solution6.click();
 	}
 	
-
-
 	@When("^Admin change the status to rejected$")
 	public void admin_change_the_status_to_rejected() throws Throwable {
 		viewBugsPage.solutStat.sendKeys("Rejected");
