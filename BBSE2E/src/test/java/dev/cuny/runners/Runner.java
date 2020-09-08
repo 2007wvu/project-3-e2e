@@ -40,7 +40,6 @@ public class Runner {
 	public static MetricsPage metricPage;
 
 
-	
 	@BeforeClass
 	public static void setUp() {
 		File file = new File("src/main/resources/chromedriver.exe");
