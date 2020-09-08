@@ -36,7 +36,7 @@ public class CreateApplicationSteps {
 
 	@Then("^Application modal is displayed$")
 	public int application_modal_is_displayed() throws Throwable {
-		Assert.assertEquals(createApplication.formDiv.isDisplayed(), true);
+		Assert.assertEquals(true, createApplication.formDiv.isDisplayed());
 		WebDriverWait wait = new WebDriverWait(driver, 2000);
 		wait.until(ExpectedConditions.visibilityOf(createApplication.numberOfApplications));
 		Thread.sleep(1000);
@@ -74,8 +74,7 @@ public class CreateApplicationSteps {
 
 	@Then("^Missing field will display an error$")
 	public void missing_field_will_display_an_error() throws Throwable {
-		Assert.assertEquals(createApplication.urlError.getAttribute("innerText"),
-				"Application Github Link is required!");
+		Assert.assertEquals("Application Github Link is required!", createApplication.urlError.getAttribute("innerText"));
 	}
 
 	@Then("^Application will not be submitted$")
